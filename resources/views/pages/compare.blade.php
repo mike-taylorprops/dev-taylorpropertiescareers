@@ -32,7 +32,7 @@
                     </thead>
                     <tbody class="divide-y divide-slate-100 text-sm">
                         @foreach ([
-                            ['Monthly fee', '$79', '$99', '$50-80 + $125 platform', '$0-varies', '$99'],
+                            ['Monthly fee', '$99', '$99', '$50-80 + $125 platform', '$0-varies', '$99'],
                             ['Transaction fee', '$0', '$495 (until cap)', '$0', '$0', '$0'],
                             ['Commission split', '100%', '100%', '64% (until cap)', '70-80%', '100%'],
                             ['Franchise fee', 'None', 'None', '6% (cap $3,000/yr)', 'None', 'None'],

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Join Taylor Properties')
-@section('description', 'Start the process to join Maryland\'s largest independent brokerage. 100% commission. $79 a month.')
+@section('description', 'Start the process to join Maryland\'s largest independent brokerage. 100% commission. $99 a month.')
 
 @section('content')
 

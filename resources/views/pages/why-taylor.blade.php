@@ -33,8 +33,8 @@
                         <p class="mt-4 text-slate-600">No franchise fees. No royalties. No transaction fees. No surprise charges. The bill is the bill.</p>
 
                         <div class="mt-8 grid gap-4 sm:grid-cols-2">
-                            <x-flip-card icon="dollar" title="Monthly Fee" stat="$79" teaser="All-in. No platform fee. No tech fee." variant="gold">
-                                $79/month is the entire bill. No platform fee on top. No tech fee. No surprise charges.
+                            <x-flip-card icon="dollar" title="Monthly Fee" stat="$99" teaser="All-in. No platform fee. No tech fee." variant="gold">
+                                $99/month is the entire bill. No platform fee on top. No tech fee. No surprise charges.
                             </x-flip-card>
                             <x-flip-card icon="shield" title="Commission Split" stat="100%" teaser="Forever. From your first deal." variant="light">
                                 Keep 100% from day one. No anniversary resets. No caps to hit. No splits to negotiate.
@@ -86,11 +86,11 @@
                     <div x-show="is(2)" x-transition.opacity x-cloak style="display:none">
                         <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">A tech stack that fights for you</p>
                         <h2 class="mt-2 font-display text-3xl font-bold text-brand-900 sm:text-4xl">All the tools, included.</h2>
-                        <p class="mt-4 text-slate-600">Everything you'd otherwise pay $300+/month for, included in your $79.</p>
+                        <p class="mt-4 text-slate-600">Everything you'd otherwise pay $300+/month for, included in your $99.</p>
 
                         <div class="mt-8 grid gap-4 sm:grid-cols-2">
                             <x-flip-card icon="computer" title="Smart CRM" stat="$0" teaser="Auto follow-up by email, text & phone." variant="dark">
-                                BoldTrail's full CRM - smart drip campaigns, AI follow-up, contact scoring - included in your $79.
+                                BoldTrail's full CRM - smart drip campaigns, AI follow-up, contact scoring - included in your $99.
                             </x-flip-card>
                             <x-flip-card icon="globe" title="IDX Website" stat="Free" teaser="Branded MLS search + home valuations." variant="light">
                                 A custom-branded agent site with real-time MLS search, IDX listings, and home valuation lead capture.

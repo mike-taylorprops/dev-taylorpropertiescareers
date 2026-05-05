@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', 'Taylor Properties | Keep 100% of Your Commission')</title>
-    <meta name="description" content="@yield('description', 'Taylor Properties pays you 100% commission for $79 a month with zero transaction fees. Maryland\'s largest independent brokerage since 1985.')">
+    <meta name="description" content="@yield('description', 'Taylor Properties pays you 100% commission for $99 a month with zero transaction fees. Maryland\'s largest independent brokerage since 1985.')">
 
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -16,7 +16,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2f569d">
 
     <meta property="og:title" content="@yield('title', 'Taylor Properties Careers')">
-    <meta property="og:description" content="@yield('description', 'Keep 100% of your commission. Pay $79 a month.')">
+    <meta property="og:description" content="@yield('description', 'Keep 100% of your commission. Pay $99 a month.')">
     <meta property="og:image" content="{{ asset('images/logo.png') }}">
     <meta property="og:type" content="website">
 

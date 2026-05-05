@@ -1,7 +1,7 @@
 @extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Taylor Properties | Keep 100% of Your Commission')
-@section('description', 'Maryland\'s largest independent brokerage. 100% commission, $79 a month, zero transaction fees. Keep more of what you earn.')
+@section('description', 'Maryland\'s largest independent brokerage. 100% commission, $99 a month, zero transaction fees. Keep more of what you earn.')
 
 @section('content')
 
@@ -24,7 +24,7 @@
                             Keep <span class="text-gradient">100%</span> of your commission.
                         </h1>
                         <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
-                            $79 a month. Zero transaction fees. No franchise fees. No surprises. The math is simple - and it's in your favor.
+                            $99 a month. Zero transaction fees. No franchise fees. No surprises. The math is simple - and it's in your favor.
                         </p>
                         <div class="mt-10 flex flex-wrap items-center gap-4">
                             <x-button :href="route('join')" variant="primary" size="lg">
@@ -40,7 +40,7 @@
                         <dl class="mt-12 grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
                             <div>
                                 <dt class="text-xs uppercase tracking-wider text-white/50">Monthly fee</dt>
-                                <dd class="mt-1 font-display text-2xl font-bold text-accent-300">$79</dd>
+                                <dd class="mt-1 font-display text-2xl font-bold text-accent-300">$99</dd>
                             </div>
                             <div>
                                 <dt class="text-xs uppercase tracking-wider text-white/50">Transaction fee</dt>
@@ -116,10 +116,10 @@
         <div class="grid gap-6 md:grid-cols-3">
             <x-flip-card variant="light"
                          icon="dollar"
-                         stat="$79"
+                         stat="$99"
                          title="Lowest Fixed Cost"
                          teaser="No franchise fees. No royalty fees. No per-transaction fees. No desk fees.">
-                $79 a month covers everything. The bill is the bill - same number, every month, forever. Most brokerages charge that much in tech fees alone.
+                $99 a month covers everything. The bill is the bill - same number, every month, forever. Most brokerages charge that much in tech fees alone.
             </x-flip-card>
 
             <x-flip-card variant="gold"

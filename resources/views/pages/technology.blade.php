@@ -165,7 +165,7 @@
                     <div class="mt-8 rounded-2xl bg-brand-50 p-6">
                         <p class="text-xs font-semibold uppercase tracking-wider text-brand-700">Bottom line</p>
                         <p class="mt-2 text-sm text-slate-700">
-                            If you tried to buy this stack a la carte - CRM, IDX site, lead gen, marketing automation, branded app - you'd pay <span class="font-bold text-brand-900">$300+/month</span>. At Taylor it's included in your $79.
+                            If you tried to buy this stack a la carte - CRM, IDX site, lead gen, marketing automation, branded app - you'd pay <span class="font-bold text-brand-900">$300+/month</span>. At Taylor it's included in your $99.
                         </p>
                     </div>
                 </div>
@@ -247,7 +247,7 @@
             <p class="mt-4 text-white/70">Front-end CRM, IDX site, lead-gen, marketing automation, branded app, plus back-office transaction management and accounting.</p>
             <div class="mx-auto mt-10 max-w-md rounded-3xl border-2 border-accent-400 bg-white/5 p-8 backdrop-blur">
                 <p class="text-xs uppercase tracking-wider text-accent-300">At Taylor</p>
-                <p class="mt-1 font-display text-5xl font-bold text-white">$79/mo</p>
+                <p class="mt-1 font-display text-5xl font-bold text-white">$99/mo</p>
                 <p class="mt-2 text-sm text-white/70">Everything included.</p>
             </div>
         </div>

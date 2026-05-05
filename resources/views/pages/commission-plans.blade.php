@@ -24,7 +24,7 @@
                     <h3 class="mt-2 font-display text-3xl font-bold text-brand-900">100% Plan</h3>
                     <p class="mt-2 text-sm text-slate-600">For most full-time agents. Lowest fixed cost, highest take-home.</p>
                     <p class="mt-6">
-                        <span class="font-display text-5xl font-bold text-brand-700">$79</span>
+                        <span class="font-display text-5xl font-bold text-brand-700">$99</span>
                         <span class="text-slate-500">/month</span>
                     </p>
                     <ul class="mt-6 space-y-3 text-sm text-slate-700">
@@ -130,13 +130,13 @@
                     </div>
                     <div class="bg-white p-8 text-center">
                         <p class="text-xs uppercase tracking-wider text-slate-500">Monthly fee</p>
-                        <p class="mt-2 font-display text-3xl font-bold text-brand-900">- $79</p>
+                        <p class="mt-2 font-display text-3xl font-bold text-brand-900">- $99</p>
                         <p class="mt-1 text-xs text-slate-500">Your only cost that month</p>
                     </div>
                     <div class="bg-gradient-to-br from-brand-700 to-brand-950 p-8 text-center text-white">
                         <p class="text-xs uppercase tracking-wider text-accent-300">You take home</p>
-                        <p class="mt-2 font-display text-3xl font-bold text-accent-300">$23,921</p>
-                        <p class="mt-1 text-xs text-white/70">99.7% of gross</p>
+                        <p class="mt-2 font-display text-3xl font-bold text-accent-300">$23,901</p>
+                        <p class="mt-1 text-xs text-white/70">99.6% of gross</p>
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@
     {{-- FAQ --}}
     <x-section eyebrow="Frequently asked" title="Questions agents always ask first.">
         <div class="mx-auto max-w-3xl">
-            <x-faq question="Is there really no transaction fee?">Yes. Other brokerages charge $395-$495 per closing. We charge zero. Your $79/month is the entire bill.</x-faq>
+            <x-faq question="Is there really no transaction fee?">Yes - we don't charge a per-deal transaction fee. Your $99/month is the entire bill, no matter how many deals you close.</x-faq>
             <x-faq question="Are there any onboarding or join fees?">No. Sign your independent contractor agreement, transfer your license, get to work.</x-faq>
             <x-faq question="Can I be on a team?">Absolutely. We have great teams across MD, DC, VA, DE, and PA. We can also set up custom team economics through the Custom plan.</x-faq>
             <x-faq question="What if I'm new to real estate?">Perfect. Our mentorship program pairs you with an experienced agent through your first three closings - no extra cost.</x-faq>

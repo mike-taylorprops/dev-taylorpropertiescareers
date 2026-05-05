@@ -6,7 +6,7 @@
         [
             'label' => 'Plans',
             'children' => [
-                ['label' => 'Commission Plans', 'route' => 'commission-plans', 'desc' => '100% commission. $79 a month.'],
+                ['label' => 'Commission Plans', 'route' => 'commission-plans', 'desc' => '100% commission. $99 a month.'],
                 ['label' => 'Compare Brokerages', 'route' => 'compare', 'desc' => 'See us next to KW, Samson, Compass.'],
                 ['label' => 'Referral Company', 'route' => 'referral-company', 'desc' => 'Refer-only agents. $99/year.'],
             ],

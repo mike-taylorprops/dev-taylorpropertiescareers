@@ -83,7 +83,7 @@
                     ['2005', 'Multi-State Expansion', 'Licensing expands to DC and VA - same model, more reach.'],
                     ['2015', 'Tech Stack Built', 'Custom CRM, IDX, and marketing tools - all included for agents.'],
                     ['2020', '1,000+ Agents', 'Crossed the thousand-agent mark while staying family-owned.'],
-                    ['Today', 'Largest Independent in MD', '1,200+ agents in 5 states. Still $79/month. Still no transaction fees.'],
+                    ['Today', 'Largest Independent in MD', '1,200+ agents in 5 states. $99/month. Zero transaction fees.'],
                 ] as $i => $event)
                     <div x-data x-intersect.once="$el.classList.add('is-visible')"
                          class="reveal relative mb-12 flex items-start gap-6 sm:gap-12 {{ $i % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse' }}">
