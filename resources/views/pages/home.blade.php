@@ -58,30 +58,33 @@
                     <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal motion-safe:animate-float relative">
                         <div class="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-accent-400/30 to-brand-400/30 blur-2xl"></div>
                         <div class="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-                            <p class="text-xs font-semibold uppercase tracking-wider text-accent-300">Annual cost comparison</p>
-                            <p class="mt-1 text-sm text-white/70">10 closings, $450k average sale</p>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-accent-300">Your annual cap at Taylor</p>
+                            <p class="mt-1 text-sm text-white/70">No matter how many deals you close.</p>
 
-                            <div class="mt-6 space-y-4">
-                                @foreach ([
-                                    ['name' => 'Taylor Properties', 'fee' => '$1,188', 'pct' => 100, 'highlight' => true],
-                                    ['name' => 'Samson Properties', 'fee' => '$6,138', 'pct' => 60, 'highlight' => false],
-                                    ['name' => 'Keller Williams', 'fee' => '$15,750', 'pct' => 25, 'highlight' => false],
-                                    ['name' => 'Compass', 'fee' => '$22,500', 'pct' => 12, 'highlight' => false],
-                                ] as $row)
-                                    <div>
-                                        <div class="flex items-center justify-between text-sm">
-                                            <span class="font-semibold {{ $row['highlight'] ? 'text-accent-300' : 'text-white/80' }}">{{ $row['name'] }}</span>
-                                            <span class="font-display font-bold {{ $row['highlight'] ? 'text-accent-300' : 'text-white/80' }}">{{ $row['fee'] }}/yr</span>
-                                        </div>
-                                        <div class="mt-2 h-2 overflow-hidden rounded-full bg-white/10">
-                                            <div class="h-full rounded-full {{ $row['highlight'] ? 'bg-accent-400' : 'bg-white/40' }}" style="width: {{ $row['pct'] }}%"></div>
-                                        </div>
-                                    </div>
-                                @endforeach
+                            <div class="mt-6 rounded-2xl border-2 border-accent-400 bg-gradient-to-br from-accent-400 to-accent-500 p-6 text-brand-950 shadow-2xl shadow-accent-400/20">
+                                <p class="text-[11px] font-bold uppercase tracking-[0.18em] text-brand-900/80">Total annual fees</p>
+                                <p class="mt-1 font-display text-6xl font-black tracking-tight text-brand-950">$1,188</p>
+                                <p class="mt-2 text-sm font-semibold text-brand-900">$99 &times; 12. That's the whole bill.</p>
                             </div>
 
-                            <a href="{{ route('compare') }}" class="mt-6 inline-flex items-center gap-1 text-xs font-semibold text-white hover:text-accent-300">
-                                See full comparison
+                            <ul class="mt-6 space-y-3 text-sm text-white/80">
+                                @foreach ([
+                                    'No transaction fee per closing',
+                                    'No franchise or royalty fees',
+                                    'No commission split',
+                                    'No surprise platform charges',
+                                ] as $item)
+                                    <li class="flex items-start gap-2">
+                                        <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-accent-400/20 text-accent-300">
+                                            <x-icon name="check" class="h-3 w-3" />
+                                        </span>
+                                        <span>{{ $item }}</span>
+                                    </li>
+                                @endforeach
+                            </ul>
+
+                            <a href="{{ route('compare') }}#calculator" class="mt-6 inline-flex items-center gap-1 text-xs font-semibold text-white hover:text-accent-300">
+                                Compare your current numbers
                                 <x-icon name="arrow-right" class="h-3 w-3" />
                             </a>
                         </div>
@@ -149,7 +152,7 @@
                     See what you'd take home.
                 </h2>
                 <p class="mt-5 text-lg text-slate-600">
-                    Pick your average sale price, your commission, and your closings. We'll compare your annual take-home at Taylor against any major brokerage - in real time.
+                    Enter your business and the fees you pay at your current brokerage. We'll show your annual take-home at Taylor versus what you keep today - in real time.
                 </p>
             </div>
             <div class="mt-12">

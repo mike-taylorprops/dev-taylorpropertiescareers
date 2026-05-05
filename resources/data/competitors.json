@@ -1,0 +1,23 @@
+{
+    "_notes": "Each competitor entry MUST include a verified source_url and source_date for every numeric claim. Rows where any field is null will be hidden in the comparison UI. Only add a number when you can point to the brokerage's own published page.",
+    "_metrics": {
+        "monthly_fee": "Recurring monthly brokerage/desk fee in USD.",
+        "transaction_fee": "Per-deal transaction fee in USD (0 if none).",
+        "split_pct": "Agent's percentage of commission (100 = 100% to agent).",
+        "franchise_fee_pct": "Royalty/franchise percentage off the top (0 if none).",
+        "annual_cap_usd": "Maximum total the brokerage can collect per year (across splits/franchise). null if unverified or no published cap."
+    },
+    "taylor": {
+        "name": "Taylor Properties",
+        "monthly_fee": 99,
+        "transaction_fee": 0,
+        "split_pct": 100,
+        "franchise_fee_pct": 0,
+        "annual_cap_usd": 1188,
+        "annual_cap_label": "$1,188 - the entire bill",
+        "source_url": "https://taylorpropertiescareers.com/commission-plans",
+        "source_date": "2026-05",
+        "notes": "$99/month \u00d7 12. No transaction fee, no franchise fee, no split, no annual cap separate from the monthly fee."
+    },
+    "competitors": []
+}

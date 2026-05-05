@@ -39,11 +39,11 @@
                             <x-flip-card icon="shield" title="Commission Split" stat="100%" teaser="Forever. From your first deal." variant="light">
                                 Keep 100% from day one. No anniversary resets. No caps to hit. No splits to negotiate.
                             </x-flip-card>
-                            <x-flip-card icon="check" title="Transaction Fees" stat="$0" teaser="Saves agents $5K-$10K every year." variant="dark">
-                                Other brokerages charge $395-$495 per deal in &quot;transaction fees.&quot; We charge zero.
+                            <x-flip-card icon="check" title="Transaction Fees" stat="$0" teaser="No per-deal cut. Ever." variant="dark">
+                                Many brokerages charge a per-closing transaction fee on top of your split. We don't - your $99/month is the entire bill.
                             </x-flip-card>
-                            <x-flip-card icon="x" title="Franchise Fees" stat="0%" teaser="KW takes 6% off the top forever." variant="light">
-                                Franchises skim 6% off every commission, every year, forever. We take 0% - because we're independent.
+                            <x-flip-card icon="x" title="Franchise Fees" stat="0%" teaser="No royalty off the top." variant="light">
+                                Franchise brokerages take a percentage of every commission as a royalty fee, every year. We're independent - we take 0%.
                             </x-flip-card>
                             <x-flip-card icon="lightning" title="Fast Pay" stat="Same Day" teaser="Funding day = pay day. No two-week wait." variant="light">
                                 When the deal funds, you get paid. Same day. Other shops make you wait 10-14 days for processing.
