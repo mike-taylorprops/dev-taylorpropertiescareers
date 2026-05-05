@@ -37,18 +37,18 @@
                             </a>
                         </div>
 
-                        <dl class="mt-12 grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
-                            <div>
-                                <dt class="text-xs uppercase tracking-wider text-white/50">Monthly fee</dt>
-                                <dd class="mt-1 font-display text-2xl font-bold text-accent-300">$99</dd>
+                        <dl class="mt-12 grid grid-cols-1 gap-4 border-t border-white/10 pt-8 xs:grid-cols-3 sm:grid-cols-3 sm:gap-6">
+                            <div class="flex items-baseline justify-between gap-3 border-b border-white/10 pb-4 sm:block sm:border-0 sm:pb-0">
+                                <dt class="text-[11px] uppercase tracking-wider text-white/50 sm:text-xs">Monthly fee</dt>
+                                <dd class="font-display text-2xl font-bold text-accent-300 sm:mt-1">$99</dd>
                             </div>
-                            <div>
-                                <dt class="text-xs uppercase tracking-wider text-white/50">Transaction fee</dt>
-                                <dd class="mt-1 font-display text-2xl font-bold text-accent-300">$0</dd>
+                            <div class="flex items-baseline justify-between gap-3 border-b border-white/10 pb-4 sm:block sm:border-0 sm:pb-0">
+                                <dt class="text-[11px] uppercase tracking-wider text-white/50 sm:text-xs">Transaction fee</dt>
+                                <dd class="font-display text-2xl font-bold text-accent-300 sm:mt-1">$0</dd>
                             </div>
-                            <div>
-                                <dt class="text-xs uppercase tracking-wider text-white/50">Commission split</dt>
-                                <dd class="mt-1 font-display text-2xl font-bold text-accent-300">100%</dd>
+                            <div class="flex items-baseline justify-between gap-3 sm:block">
+                                <dt class="text-[11px] uppercase tracking-wider text-white/50 sm:text-xs">Commission split</dt>
+                                <dd class="font-display text-2xl font-bold text-accent-300 sm:mt-1">100%</dd>
                             </div>
                         </dl>
                     </div>
