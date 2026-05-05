@@ -114,7 +114,7 @@
                     <x-stat :number="5" label="States Licensed" tone="light" />
                 </div>
                 <div class="bg-white p-8">
-                    <x-stat :number="0" prefix="$" label="Transaction Fees" sublabel="Forever" tone="light" />
+                    <x-stat :number="0" prefix="$" label="Agent Transaction Fees" sublabel="Forever" tone="light" />
                 </div>
             </div>
         </div>

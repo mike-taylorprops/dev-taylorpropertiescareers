@@ -39,7 +39,7 @@
                             <x-flip-card icon="shield" title="Commission Split" stat="100%" teaser="Forever. From your first deal." variant="light">
                                 Keep 100% from day one. No anniversary resets. No caps to hit. No splits to negotiate.
                             </x-flip-card>
-                            <x-flip-card icon="check" title="Transaction Fees" stat="$0" teaser="No per-deal cut. Ever." variant="dark">
+                            <x-flip-card icon="check" title="Agent Transaction Fees" stat="$0" teaser="No per-deal cut. Ever." variant="dark">
                                 Many brokerages charge a per-closing transaction fee on top of your split. We don't - your $99/month is the entire bill.
                             </x-flip-card>
                             <x-flip-card icon="x" title="Franchise Fees" stat="0%" teaser="No royalty off the top." variant="light">
@@ -47,9 +47,6 @@
                             </x-flip-card>
                             <x-flip-card icon="lightning" title="Fast Pay" stat="Same Day" teaser="Funding day = pay day. No two-week wait." variant="light">
                                 When the deal funds, you get paid. Same day. Other shops make you wait 10-14 days for processing.
-                            </x-flip-card>
-                            <x-flip-card icon="gift" title="Referral Plan" stat="$99/yr" teaser="Hold your license. Refer. Keep 85%." variant="gold">
-                                Perfect for licensed referral-only agents. $99/year and you keep 85% of every referral commission.
                             </x-flip-card>
                         </div>
                     </div>

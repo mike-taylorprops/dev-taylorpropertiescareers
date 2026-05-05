@@ -44,7 +44,7 @@
                     <p class="mt-2 text-sm font-semibold text-brand-900">The entire annual bill.</p>
                 </div>
                 <div class="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl">
-                    <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">Transaction Fee</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">Agent Transaction Fee</p>
                     <p class="mt-3 font-display text-5xl font-bold text-brand-900">$0</p>
                     <p class="mt-2 text-sm text-slate-600">Not per deal. Not at year-end. Zero.</p>
                 </div>
@@ -93,7 +93,7 @@
                         <tbody class="divide-y divide-slate-100 text-sm">
                             @foreach ([
                                 ['Monthly fee', 'monthly_fee', 'currency'],
-                                ['Transaction fee', 'transaction_fee', 'currency'],
+                                ['Agent transaction fee', 'transaction_fee', 'currency'],
                                 ['Commission split', 'split_pct', 'percent'],
                                 ['Franchise/royalty fee', 'franchise_fee_pct', 'percent'],
                                 ['Annual cap', 'annual_cap_usd', 'currency_or_label'],

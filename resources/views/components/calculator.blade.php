@@ -63,7 +63,7 @@
                     </label>
 
                     <label class="block">
-                        <span class="text-xs font-semibold text-slate-700">Transaction fee per deal</span>
+                        <span class="text-xs font-semibold text-slate-700">Agent transaction fee per deal</span>
                         <div class="mt-1 flex items-center rounded-lg border border-slate-300 focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-500/20">
                             <span class="pl-3 text-sm text-slate-400">$</span>
                             <input type="number" min="0" step="1" x-model.number="currentTransactionFee"
