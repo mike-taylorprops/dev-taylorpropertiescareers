@@ -205,7 +205,7 @@
                             ['End-to-End Transactions', 'Track every deal from contract to closing - milestones, deadlines, and tasks auto-managed.'],
                             ['E-Signature Included', 'Built-in e-sign at no extra cost. Send, sign, and store - no DocuSign bill.'],
                             ['Compliance Made Easy', 'Required-document checklists, broker review queues, and audit-ready file storage.'],
-                            ['Auto Commission Disbursement', 'When a deal closes, your check is calculated and processed automatically. Same day.'],
+                            ['All Association Forms Provided', 'Every state and local association form pre-loaded - fillable and ready for e-signatures.'],
                             ['Accounting Integration', 'Direct sync to QuickBooks and Xero - so your books are never behind your business.'],
                             ['Production Reporting', 'Personal dashboards for GCI, units, conversion - know exactly where your business stands.'],
                             ['Mobile Tracking', 'Approve documents, check status, and sign from your phone - the deal doesn\'t wait.'],
