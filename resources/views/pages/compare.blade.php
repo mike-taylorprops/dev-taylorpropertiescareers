@@ -37,8 +37,8 @@
                             ['Commission split', '100%', '100%', '64% (until cap)', '70-80%', '100%'],
                             ['Franchise fee', 'None', 'None', '6% (cap $3,000/yr)', 'None', 'None'],
                             ['Onboarding fee', '$0', '$0', 'Varies', 'Varies', '$0'],
-                            ['Annual cost @ 10 closings*', '$948', '$6,138', '~$15,750', '~$22,500', '$1,188'],
-                            ['Annual cost @ 25 closings*', '$948', '$13,563', '~$24,000', '~$56,250', '$1,188'],
+                            ['Annual cost @ 10 closings*', '$1,188', '$6,138', '~$15,750', '~$22,500', '$1,188'],
+                            ['Annual cost @ 25 closings*', '$1,188', '$13,563', '~$24,000', '~$56,250', '$1,188'],
                         ] as $row)
                             <tr class="group">
                                 <th scope="row" class="sticky left-0 z-10 bg-white px-6 py-4 font-semibold text-slate-700 group-hover:bg-slate-50">{{ $row[0] }}</th>

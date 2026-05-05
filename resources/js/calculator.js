@@ -28,7 +28,7 @@ export const calculator = (config = {}) => ({
     },
 
     get taylorAnnual() {
-        return this.grossAnnual - (79 * 12);
+        return this.grossAnnual - (99 * 12);
     },
 
     get competitorAnnual() {

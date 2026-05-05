@@ -63,7 +63,7 @@
 
                             <div class="mt-6 space-y-4">
                                 @foreach ([
-                                    ['name' => 'Taylor Properties', 'fee' => '$948', 'pct' => 100, 'highlight' => true],
+                                    ['name' => 'Taylor Properties', 'fee' => '$1,188', 'pct' => 100, 'highlight' => true],
                                     ['name' => 'Samson Properties', 'fee' => '$6,138', 'pct' => 60, 'highlight' => false],
                                     ['name' => 'Keller Williams', 'fee' => '$15,750', 'pct' => 25, 'highlight' => false],
                                     ['name' => 'Compass', 'fee' => '$22,500', 'pct' => 12, 'highlight' => false],
