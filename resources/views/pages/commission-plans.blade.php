@@ -1,0 +1,172 @@
+@extends('layouts.app')
+
+@section('title', 'Commission Plans | Taylor Properties')
+@section('description', 'Three plans, all built around 100% commission. Pick what fits, or build your own.')
+
+@section('content')
+
+    <x-page-hero eyebrow="Pick your plan"
+                 title="Three plans. <span class='text-gradient'>One promise.</span>"
+                 subtitle="100% commission across the board. Pick the structure that matches your business - or talk to us about a custom plan.">
+        <x-slot:actions>
+            <x-button href="#calculator" variant="primary" size="lg">Run the numbers</x-button>
+            <x-button :href="route('compare')" variant="ghost" size="lg">Compare brokerages</x-button>
+        </x-slot:actions>
+    </x-page-hero>
+
+    {{-- Plans --}}
+    <section x-data="{ show_commission_request_form: false, show_custom_header: false }" class="bg-white py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-6 lg:grid-cols-3">
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Standard</p>
+                    <h3 class="mt-2 font-display text-3xl font-bold text-brand-900">100% Plan</h3>
+                    <p class="mt-2 text-sm text-slate-600">For most full-time agents. Lowest fixed cost, highest take-home.</p>
+                    <p class="mt-6">
+                        <span class="font-display text-5xl font-bold text-brand-700">$79</span>
+                        <span class="text-slate-500">/month</span>
+                    </p>
+                    <ul class="mt-6 space-y-3 text-sm text-slate-700">
+                        @foreach (['100% commission - keep every dollar', 'Zero transaction fees', 'No franchise or royalty fees', 'Free CRM, IDX site, e-sign', 'Mentorship + training included', 'Same low fee, every month'] as $f)
+                            <li class="flex items-start gap-2">
+                                <x-icon name="check" class="h-5 w-5 shrink-0 text-accent-500" />
+                                <span>{{ $f }}</span>
+                            </li>
+                        @endforeach
+                    </ul>
+                    <button @click="show_commission_request_form = true; show_custom_header = false"
+                            class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-800">
+                        Request Details
+                    </button>
+                </div>
+
+                <div class="relative rounded-3xl border-2 border-accent-400 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 p-8 text-white shadow-2xl shadow-accent-400/20">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent-400 px-4 py-1 text-xs font-bold uppercase tracking-wider text-brand-900">Most Popular</span>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-accent-300">Custom</p>
+                    <h3 class="mt-2 font-display text-3xl font-bold">Build Your Own</h3>
+                    <p class="mt-2 text-sm text-white/80">Have a team? High volume? Specialty market? Let's design a plan around your business.</p>
+                    <p class="mt-6">
+                        <span class="font-display text-5xl font-bold text-accent-300">Talk to us</span>
+                    </p>
+                    <ul class="mt-6 space-y-3 text-sm text-white/90">
+                        @foreach (['Custom split or flat-fee structure', 'Team-friendly pricing', 'Specialty (commercial, rental) terms', 'Volume incentives', 'Dedicated broker support', 'Everything in Standard, plus more'] as $f)
+                            <li class="flex items-start gap-2">
+                                <x-icon name="check" class="h-5 w-5 shrink-0 text-accent-300" />
+                                <span>{{ $f }}</span>
+                            </li>
+                        @endforeach
+                    </ul>
+                    <button @click="show_commission_request_form = true; show_custom_header = true"
+                            class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-accent-400 px-6 py-3 text-sm font-bold text-brand-900 transition hover:bg-accent-300">
+                        Design My Plan
+                    </button>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Referral</p>
+                    <h3 class="mt-2 font-display text-3xl font-bold text-brand-900">Referral Plan</h3>
+                    <p class="mt-2 text-sm text-slate-600">For licensees who want to refer business without active production.</p>
+                    <p class="mt-6">
+                        <span class="font-display text-5xl font-bold text-brand-700">$99</span>
+                        <span class="text-slate-500">/year</span>
+                    </p>
+                    <ul class="mt-6 space-y-3 text-sm text-slate-700">
+                        @foreach (['85/15 commission split', 'No MLS or association fees', 'No monthly bills', 'Hold your license active', 'Refer to any agent in the country', 'Easy onboarding'] as $f)
+                            <li class="flex items-start gap-2">
+                                <x-icon name="check" class="h-5 w-5 shrink-0 text-accent-500" />
+                                <span>{{ $f }}</span>
+                            </li>
+                        @endforeach
+                    </ul>
+                    <a href="{{ route('referral-company') }}"
+                       class="mt-8 inline-flex w-full items-center justify-center rounded-full border-2 border-brand-700 px-6 py-3 text-sm font-semibold text-brand-700 transition hover:bg-brand-700 hover:text-white">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {{-- Commission request modal --}}
+        <div x-show="show_commission_request_form"
+             x-transition.opacity
+             @keydown.escape.window="show_commission_request_form = false"
+             class="fixed inset-0 z-50 flex items-center justify-center p-4"
+             style="display:none">
+            <div @click="show_commission_request_form = false" class="absolute inset-0 bg-brand-950/80 backdrop-blur-sm"></div>
+            <div x-trap.inert.noscroll="show_commission_request_form"
+                 class="relative max-h-[90vh] w-full max-w-xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl sm:p-8">
+                <button @click="show_commission_request_form = false"
+                        class="absolute right-4 top-4 rounded-full p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+                        aria-label="Close">
+                    <x-icon name="x" class="h-5 w-5" />
+                </button>
+                <h3 class="font-display text-2xl font-bold text-brand-900">
+                    <span x-show="show_custom_header">Custom Commission</span>
+                    <span x-show="!show_custom_header">Commission Details</span> Request
+                </h3>
+                <p class="mt-2 text-sm text-slate-600">Fill out the form and we'll send the full plan details to your inbox.</p>
+                <div class="mt-6">
+                    <x-nutshell-form form="m4IxTo" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Worked example --}}
+    <section class="bg-slate-50 py-20 sm:py-28">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">Real example</p>
+                <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-4xl">Two listings. $400k each. 3% commission.</h2>
+            </div>
+
+            <div class="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
+                <div class="grid gap-px bg-slate-100 sm:grid-cols-3">
+                    <div class="bg-white p-8 text-center">
+                        <p class="text-xs uppercase tracking-wider text-slate-500">Two sales @ 3%</p>
+                        <p class="mt-2 font-display text-3xl font-bold text-brand-900">$24,000</p>
+                        <p class="mt-1 text-xs text-slate-500">Gross commission</p>
+                    </div>
+                    <div class="bg-white p-8 text-center">
+                        <p class="text-xs uppercase tracking-wider text-slate-500">Monthly fee</p>
+                        <p class="mt-2 font-display text-3xl font-bold text-brand-900">- $79</p>
+                        <p class="mt-1 text-xs text-slate-500">Your only cost that month</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-brand-700 to-brand-950 p-8 text-center text-white">
+                        <p class="text-xs uppercase tracking-wider text-accent-300">You take home</p>
+                        <p class="mt-2 font-display text-3xl font-bold text-accent-300">$23,921</p>
+                        <p class="mt-1 text-xs text-white/70">99.7% of gross</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Calculator --}}
+    <section id="calculator" class="bg-white py-20 sm:py-28">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-3xl text-center">
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">Plug in your numbers</p>
+                <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-5xl">Earnings calculator.</h2>
+            </div>
+            <div class="mt-12">
+                <x-calculator />
+            </div>
+        </div>
+    </section>
+
+    {{-- FAQ --}}
+    <x-section eyebrow="Frequently asked" title="Questions agents always ask first.">
+        <div class="mx-auto max-w-3xl">
+            <x-faq question="Is there really no transaction fee?">Yes. Other brokerages charge $395-$495 per closing. We charge zero. Your $79/month is the entire bill.</x-faq>
+            <x-faq question="Are there any onboarding or join fees?">No. Sign your independent contractor agreement, transfer your license, get to work.</x-faq>
+            <x-faq question="Can I be on a team?">Absolutely. We have great teams across MD, DC, VA, DE, and PA. We can also set up custom team economics through the Custom plan.</x-faq>
+            <x-faq question="What if I'm new to real estate?">Perfect. Our mentorship program pairs you with an experienced agent through your first three closings - no extra cost.</x-faq>
+            <x-faq question="What if I just want to refer business?">The Referral Plan is for you. $99/year, 85% on every referred deal, no MLS or association fees.</x-faq>
+        </div>
+    </x-section>
+
+    <x-cta-band />
+
+@endsection
