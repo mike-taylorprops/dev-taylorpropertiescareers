@@ -19,46 +19,46 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="grid gap-6 lg:grid-cols-3">
 
-                <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl">
-                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Standard</p>
-                    <h3 class="mt-2 font-display text-3xl font-bold text-brand-900">100% Plan</h3>
-                    <p class="mt-2 text-sm text-slate-600">For most full-time agents. Lowest fixed cost, highest take-home.</p>
-                    <p class="mt-6">
-                        <span class="font-display text-5xl font-bold text-brand-700">$99</span>
-                        <span class="text-slate-500">/month</span>
-                    </p>
-                    <ul class="mt-6 space-y-3 text-sm text-slate-700">
-                        @foreach (['100% commission - keep every dollar', 'Zero transaction fees', 'No franchise or royalty fees', 'Free CRM, IDX site, e-sign', 'Mentorship + training included', 'Same low fee, every month'] as $f)
-                            <li class="flex items-start gap-2">
-                                <x-icon name="check" class="h-5 w-5 shrink-0 text-accent-500" />
-                                <span>{{ $f }}</span>
-                            </li>
-                        @endforeach
-                    </ul>
-                    <button @click="show_commission_request_form = true; show_custom_header = false"
-                            class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-800">
-                        Request Details
-                    </button>
-                </div>
-
                 <div class="relative rounded-3xl border-2 border-accent-400 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 p-8 text-white shadow-2xl shadow-accent-400/20">
                     <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent-400 px-4 py-1 text-xs font-bold uppercase tracking-wider text-brand-900">Most Popular</span>
-                    <p class="text-xs font-semibold uppercase tracking-wider text-accent-300">Custom</p>
-                    <h3 class="mt-2 font-display text-3xl font-bold">Build Your Own</h3>
-                    <p class="mt-2 text-sm text-white/80">Have a team? High volume? Specialty market? Let's design a plan around your business.</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-accent-300">Standard</p>
+                    <h3 class="mt-2 font-display text-3xl font-bold">100% Plan</h3>
+                    <p class="mt-2 text-sm text-white/80">For most full-time agents. Lowest fixed cost, highest take-home.</p>
                     <p class="mt-6">
-                        <span class="font-display text-5xl font-bold text-accent-300">Talk to us</span>
+                        <span class="font-display text-5xl font-bold text-accent-300">$99</span>
+                        <span class="text-white/70">/month</span>
                     </p>
                     <ul class="mt-6 space-y-3 text-sm text-white/90">
-                        @foreach (['Custom split or flat-fee structure', 'Team-friendly pricing', 'Specialty (commercial, rental) terms', 'Volume incentives', 'Dedicated broker support', 'Everything in Standard, plus more'] as $f)
+                        @foreach (['100% commission - keep every dollar', 'Zero transaction fees', 'No franchise or royalty fees', 'Free CRM, IDX site, e-sign', 'Mentorship + training included', 'Same low fee, every month'] as $f)
                             <li class="flex items-start gap-2">
                                 <x-icon name="check" class="h-5 w-5 shrink-0 text-accent-300" />
                                 <span>{{ $f }}</span>
                             </li>
                         @endforeach
                     </ul>
-                    <button @click="show_commission_request_form = true; show_custom_header = true"
+                    <button @click="show_commission_request_form = true; show_custom_header = false"
                             class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-accent-400 px-6 py-3 text-sm font-bold text-brand-900 transition hover:bg-accent-300">
+                        Request Details
+                    </button>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Custom</p>
+                    <h3 class="mt-2 font-display text-3xl font-bold text-brand-900">Build Your Own</h3>
+                    <p class="mt-2 text-sm text-slate-600">Have a team? High volume? Specialty market? Let's design a plan around your business.</p>
+                    <p class="mt-6">
+                        <span class="font-display text-5xl font-bold text-brand-700">Talk to us</span>
+                    </p>
+                    <ul class="mt-6 space-y-3 text-sm text-slate-700">
+                        @foreach (['Custom split or flat-fee structure', 'Team-friendly pricing', 'Specialty (commercial, rental) terms', 'Volume incentives', 'Dedicated broker support', 'Everything in Standard, plus more'] as $f)
+                            <li class="flex items-start gap-2">
+                                <x-icon name="check" class="h-5 w-5 shrink-0 text-accent-500" />
+                                <span>{{ $f }}</span>
+                            </li>
+                        @endforeach
+                    </ul>
+                    <button @click="show_commission_request_form = true; show_custom_header = true"
+                            class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-800">
                         Design My Plan
                     </button>
                 </div>
