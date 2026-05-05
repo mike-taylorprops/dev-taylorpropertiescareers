@@ -60,55 +60,39 @@
 
                 <div class="lg:col-span-5">
                     <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal motion-safe:animate-float relative">
-                        {{-- Outer glow ring --}}
-                        <div class="absolute -inset-6 -z-10 rounded-[3rem] bg-gradient-to-br from-accent-400/50 via-accent-300/30 to-brand-400/40 blur-3xl motion-safe:animate-blob"></div>
+                        <div class="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-accent-400/30 to-brand-400/30 blur-2xl"></div>
+                        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+                            <h2 class="font-display text-2xl font-bold leading-tight text-white sm:text-3xl">
+                                Your annual cap <span class="text-accent-300">at Taylor</span>
+                            </h2>
+                            <p class="mt-2 text-sm text-white/70">No matter how many deals you close.</p>
 
-                        {{-- Hero card: gold-on-gold, the loudest thing on the page --}}
-                        <div class="relative overflow-hidden rounded-3xl border-4 border-accent-300 bg-gradient-to-br from-accent-300 via-accent-400 to-accent-500 p-8 text-brand-950 shadow-[0_25px_80px_-15px_rgba(245,179,36,0.6)] sm:p-10">
-                            {{-- Shimmer overlay --}}
-                            <div class="pointer-events-none absolute inset-0 opacity-40 motion-safe:animate-shimmer"
-                                 style="background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.7) 50%, transparent 70%); background-size: 200% 100%;"></div>
-                            {{-- Decorative blob --}}
-                            <div class="pointer-events-none absolute -top-20 -right-20 h-56 w-56 rounded-full bg-white/30 blur-3xl"></div>
-
-                            <div class="relative">
-                                <div class="inline-flex items-center gap-2 rounded-full bg-brand-950/15 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-brand-950 backdrop-blur sm:text-xs">
-                                    <span class="grid h-2 w-2 place-items-center rounded-full bg-brand-950"></span>
-                                    Your annual cap at Taylor
-                                </div>
-
-                                <p class="mt-6 font-display text-7xl font-black leading-none tracking-tighter text-brand-950 sm:text-8xl lg:text-9xl">
-                                    $1,188
-                                </p>
-                                <p class="mt-3 font-display text-xl font-bold text-brand-900 sm:text-2xl">
-                                    The entire annual bill.
-                                </p>
-                                <p class="mt-2 text-sm font-semibold text-brand-900/80 sm:text-base">
-                                    $99 &times; 12. No matter how many deals you close.
-                                </p>
-
-                                <div class="mt-8 grid grid-cols-2 gap-3">
-                                    @foreach ([
-                                        'No transaction fees',
-                                        'No franchise fees',
-                                        'No commission split',
-                                        'No surprise charges',
-                                    ] as $item)
-                                        <div class="flex items-start gap-2">
-                                            <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand-950 text-accent-300">
-                                                <x-icon name="check" class="h-3 w-3" />
-                                            </span>
-                                            <span class="text-sm font-semibold text-brand-950">{{ $item }}</span>
-                                        </div>
-                                    @endforeach
-                                </div>
-
-                                <a href="{{ route('compare') }}#calculator"
-                                   class="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-950 px-5 py-3 text-sm font-bold text-accent-300 shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-xl">
-                                    Compare your current numbers
-                                    <x-icon name="arrow-right" class="h-4 w-4" />
-                                </a>
+                            <div class="mt-6 rounded-2xl border-2 border-accent-400 bg-gradient-to-br from-accent-400 to-accent-500 p-6 text-brand-950 shadow-2xl shadow-accent-400/20">
+                                <p class="text-[11px] font-bold uppercase tracking-[0.18em] text-brand-900/80">Total annual fees</p>
+                                <p class="mt-1 font-display text-6xl font-black tracking-tight text-brand-950">$1,188</p>
+                                <p class="mt-2 text-sm font-semibold text-brand-900">$99 &times; 12. That's the whole bill.</p>
                             </div>
+
+                            <ul class="mt-6 space-y-3 text-sm text-white/80">
+                                @foreach ([
+                                    'No transaction fee per closing',
+                                    'No franchise or royalty fees',
+                                    'No commission split',
+                                    'No surprise platform charges',
+                                ] as $item)
+                                    <li class="flex items-start gap-2">
+                                        <span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-accent-400/20 text-accent-300">
+                                            <x-icon name="check" class="h-3 w-3" />
+                                        </span>
+                                        <span>{{ $item }}</span>
+                                    </li>
+                                @endforeach
+                            </ul>
+
+                            <a href="{{ route('compare') }}#calculator" class="mt-6 inline-flex items-center gap-1 text-xs font-semibold text-white hover:text-accent-300">
+                                Compare your current numbers
+                                <x-icon name="arrow-right" class="h-3 w-3" />
+                            </a>
                         </div>
                     </div>
                 </div>
