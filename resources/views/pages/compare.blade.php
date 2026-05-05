@@ -6,12 +6,12 @@
 @php
     $competitorData = json_decode(file_get_contents(resource_path('data/competitors.json')), true);
     $taylor = $competitorData['taylor'];
-    $competitors = collect($competitorData['competitors'] ?? [])->filter(fn($c) =>
+    $competitors = collect($competitorData['competitors'] ?? []) -> filter(fn($c) =>
         ($c['monthly_fee'] ?? null) !== null
         && ($c['transaction_fee'] ?? null) !== null
         && ($c['split_pct'] ?? null) !== null
         && !empty($c['source_url'])
-    )->values();
+    ) -> values();
 @endphp
 
 @section('content')
@@ -29,7 +29,7 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">What Taylor charges</p>
-                <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-5xl">No splits. No surprises. <span class="text-gradient">One number.</span></h2>
+                <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-5xl">No splits. No surprises. <span class="text-accent-500">One number.</span></h2>
             </div>
 
             <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -56,7 +56,7 @@
             </div>
 
             <div class="mt-10 mx-auto max-w-3xl rounded-2xl border border-brand-100 bg-brand-50 p-6 text-center">
-                <p class="text-sm text-slate-700">
+                <p class="text-lg text-slate-700">
                     Most brokerages bury the math in splits, caps, royalty fees, transaction fees, and "platform" surcharges. We don't. <span class="font-semibold text-brand-900">${{ number_format($taylor['annual_cap_usd']) }}/year is the whole bill.</span>
                 </p>
             </div>
@@ -64,7 +64,7 @@
     </section>
 
     {{-- Optional comparison table - only renders if we have verified competitor data --}}
-    @if ($competitors->isNotEmpty())
+    @if ($competitors -> isNotEmpty())
         <section class="bg-slate-50 py-20 sm:py-28">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
@@ -132,7 +132,7 @@
                 <p class="mt-4 text-xs text-slate-500">
                     Each competitor row is sourced from that brokerage's public fee documentation. Verify any number yourself:
                     @foreach ($competitors as $c)
-                        <a href="{{ $c['source_url'] }}" target="_blank" rel="noopener" class="ml-2 text-brand-700 hover:underline">{{ $c['name'] }}</a>@if (!$loop->last),@endif
+                        <a href="{{ $c['source_url'] }}" target="_blank" rel="noopener" class="ml-2 text-brand-700 hover:underline">{{ $c['name'] }}</a>@if (!$loop -> last),@endif
                     @endforeach.
                 </p>
             </div>
@@ -140,7 +140,7 @@
     @endif
 
     {{-- Calculator: agent-driven, fully honest --}}
-    <section id="calculator" class="bg-white py-20 sm:py-28">
+    <section id="calculator" class="bg-white pb-20 pt-4 sm:pb-28 sm:pt-8">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">The honest comparison</p>
