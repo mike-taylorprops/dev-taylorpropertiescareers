@@ -6,14 +6,33 @@
 @section('content')
 
     {{-- Hero --}}
-    <section class="relative isolate overflow-hidden bg-brand-950 pt-32 pb-24 text-white sm:pt-40 sm:pb-32 lg:pt-48 lg:pb-40">
+    <section class="relative isolate overflow-hidden bg-brand-950 pt-28 pb-24 text-white sm:pt-32 sm:pb-32 lg:pt-36 lg:pb-40">
         <div class="absolute -top-32 -left-32 h-[34rem] w-[34rem] rounded-full bg-brand-500/40 blur-3xl motion-safe:animate-blob"></div>
         <div class="absolute top-40 -right-32 h-[36rem] w-[36rem] rounded-full bg-accent-400/25 blur-3xl motion-safe:animate-blob-slow"></div>
         <div class="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-brand-400/30 blur-3xl motion-safe:animate-float"></div>
         <div class="absolute inset-0 bg-grid opacity-30"></div>
 
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="grid items-center gap-12 lg:grid-cols-12">
+
+            {{-- Headline numbers - the first thing seen --}}
+            <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal">
+                <dl class="grid grid-cols-3 divide-x divide-white/10 overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur sm:rounded-3xl">
+                    <div class="px-3 py-5 text-center sm:px-6 sm:py-7">
+                        <dt class="text-[10px] font-semibold uppercase tracking-[0.15em] text-accent-300 sm:text-xs">Monthly Fee</dt>
+                        <dd class="mt-2 font-display text-3xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">$99</dd>
+                    </div>
+                    <div class="px-3 py-5 text-center sm:px-6 sm:py-7">
+                        <dt class="text-[10px] font-semibold uppercase tracking-[0.15em] text-accent-300 sm:text-xs">Agent Transaction Fees</dt>
+                        <dd class="mt-2 font-display text-3xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">$0</dd>
+                    </div>
+                    <div class="px-3 py-5 text-center sm:px-6 sm:py-7">
+                        <dt class="text-[10px] font-semibold uppercase tracking-[0.15em] text-accent-300 sm:text-xs">Commission Split</dt>
+                        <dd class="mt-2 font-display text-3xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">100%</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="mt-12 grid items-center gap-12 sm:mt-16 lg:grid-cols-12">
                 <div class="lg:col-span-7">
                     <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal">
                         <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent-300 backdrop-blur">
@@ -36,21 +55,6 @@
                                 <x-icon name="arrow-right" class="h-4 w-4" />
                             </a>
                         </div>
-
-                        <dl class="mt-12 grid grid-cols-1 gap-4 border-t border-white/10 pt-8 xs:grid-cols-3 sm:grid-cols-3 sm:gap-6">
-                            <div class="flex items-baseline justify-between gap-3 border-b border-white/10 pb-4 sm:block sm:border-0 sm:pb-0">
-                                <dt class="text-[11px] uppercase tracking-wider text-white/50 sm:text-xs">Monthly fee</dt>
-                                <dd class="font-display text-2xl font-bold text-accent-300 sm:mt-1">$99</dd>
-                            </div>
-                            <div class="flex items-baseline justify-between gap-3 border-b border-white/10 pb-4 sm:block sm:border-0 sm:pb-0">
-                                <dt class="text-[11px] uppercase tracking-wider text-white/50 sm:text-xs">Transaction fee</dt>
-                                <dd class="font-display text-2xl font-bold text-accent-300 sm:mt-1">$0</dd>
-                            </div>
-                            <div class="flex items-baseline justify-between gap-3 sm:block">
-                                <dt class="text-[11px] uppercase tracking-wider text-white/50 sm:text-xs">Commission split</dt>
-                                <dd class="font-display text-2xl font-bold text-accent-300 sm:mt-1">100%</dd>
-                            </div>
-                        </dl>
                     </div>
                 </div>
 
