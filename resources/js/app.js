@@ -56,7 +56,7 @@ Alpine.data('nav', () => ({
         window.addEventListener('scroll', () => this.onScroll(), { passive: true });
     },
     onScroll() {
-        this.scrolled = window.scrollY > 120;
+        this.scrolled = window.scrollY > 20;
     },
     toggle() {
         this.open = !this.open;
