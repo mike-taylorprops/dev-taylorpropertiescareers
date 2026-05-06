@@ -44,6 +44,10 @@ Alpine.data('reveal', () => ({
     },
 }));
 
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
 Alpine.data('nav', () => ({
     scrolled: false,
     open: false,
@@ -52,7 +56,7 @@ Alpine.data('nav', () => ({
         window.addEventListener('scroll', () => this.onScroll(), { passive: true });
     },
     onScroll() {
-        this.scrolled = window.scrollY > 40;
+        this.scrolled = window.scrollY > 120;
     },
     toggle() {
         this.open = !this.open;
