@@ -116,7 +116,7 @@
 html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: var(--color-brand-500) var(--color-brand-50);
+    scrollbar-color: var(--color-brand-500) var(--color-brand-950);
 }
 
 body {
@@ -129,21 +129,21 @@ body {
     height: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: var(--color-brand-50);
+    background: var(--color-brand-950);
 }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--color-brand-500), var(--color-brand-700));
+    background: linear-gradient(180deg, var(--color-brand-400), var(--color-brand-600));
     border-radius: 9999px;
-    border: 2px solid var(--color-brand-50);
+    border: 2px solid var(--color-brand-950);
     background-clip: padding-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, var(--color-brand-400), var(--color-brand-600));
+    background: linear-gradient(180deg, var(--color-accent-400), var(--color-accent-500));
     background-clip: padding-box;
-    border: 2px solid var(--color-brand-50);
+    border: 2px solid var(--color-brand-950);
 }
 ::-webkit-scrollbar-corner {
-    background: var(--color-brand-50);
+    background: var(--color-brand-950);
 }
 
 @media (prefers-reduced-motion: reduce) {
