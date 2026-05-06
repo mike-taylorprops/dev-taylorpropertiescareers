@@ -24,7 +24,7 @@
 
                     <div class="mt-8 space-y-6 text-lg leading-relaxed text-slate-700">
                         <p>
-                            Robb Taylor opened Annapolis Acceptance Properties with one mission: build a brokerage that serves the <em class="text-brand-700 not-italic font-semibold">agent</em>, not the other way around.
+                            Robb Taylor opened Anne Arundel Properties with one mission: build a brokerage that serves the <em class="text-brand-700 not-italic font-semibold">agent</em>, not the other way around.
                         </p>
                         <p>
                             In an industry where franchise fees, transaction fees, and split structures eat up half an agent's commission, we built something different. We pioneered the 100% commission model in Maryland - and never looked back.
@@ -78,7 +78,7 @@
                 <div class="absolute left-4 top-0 h-full w-0.5 bg-brand-200 sm:left-1/2 sm:-translate-x-1/2"></div>
 
                 @foreach ([
-                    ['1985', 'Founded', 'Robb Taylor opens Annapolis Acceptance Properties in Annapolis, MD.'],
+                    ['1985', 'Founded', 'Robb Taylor opens Anne Arundel Properties in Annapolis, MD.'],
                     ['1995', 'First 100% Plan', 'We launch one of Maryland\'s first 100%-commission models.'],
                     ['2005', 'Multi-State Expansion', 'Licensing expands to DC and VA - same model, more reach.'],
                     ['2015', 'Tech Stack Built', 'Custom CRM, IDX, and marketing tools - all included for agents.'],

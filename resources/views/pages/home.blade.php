@@ -14,6 +14,16 @@
 
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
+            {{-- Logo - centered, prominent, the brand front and center --}}
+            <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal mb-8 flex justify-center sm:mb-12">
+                <div class="relative">
+                    <div class="absolute inset-0 -z-10 scale-150 rounded-full bg-gradient-to-br from-accent-400/30 via-brand-400/20 to-accent-300/30 blur-3xl motion-safe:animate-blob"></div>
+                    <img src="{{ asset('images/logo-white.png') }}"
+                         alt="Taylor Properties"
+                         class="h-16 w-auto drop-shadow-[0_8px_32px_rgba(245,179,36,0.45)] sm:h-20 lg:h-24">
+                </div>
+            </div>
+
             {{-- Headline numbers - the first thing seen --}}
             <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal">
                 <dl class="grid grid-cols-3 divide-x divide-white/10 overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur sm:rounded-3xl">

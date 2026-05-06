@@ -46,7 +46,9 @@
     class="fixed inset-x-0 top-0 z-40 transition-all duration-300"
 >
     <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8">
-        <a href="{{ route('home') }}" class="flex items-center gap-3">
+        <a href="{{ route('home') }}"
+           class="flex items-center gap-3 transition-opacity duration-300"
+           @if ($transparent) :class="scrolled || open ? 'opacity-100' : 'opacity-0 pointer-events-none'" @endif>
             <img src="{{ asset('images/logo-white.png') }}" alt="Taylor Properties" class="h-10 w-auto sm:h-12">
         </a>
 
