@@ -3,7 +3,7 @@
 <div
     x-data="calculator()"
     x-cloak
-    {{ $attributes->merge(['class' => 'overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl shadow-brand-500/10']) }}
+    {{ $attributes -> merge(['class' => 'overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl shadow-brand-500/10']) }}
 >
     <div class="grid gap-8 p-6 sm:p-10 lg:grid-cols-5 lg:gap-12">
         <div class="space-y-8 lg:col-span-3">
@@ -110,7 +110,7 @@
 
                 <div class="relative space-y-6">
                     <div>
-                        <p class="text-xs font-semibold uppercase tracking-wider text-accent-300">Annual gross commission</p>
+                        <p class=" font-semibold uppercase tracking-wider text-accent-300">Annual gross commission</p>
                         <p class="mt-1 font-display text-3xl font-bold" x-text="money(grossAnnual)"></p>
                     </div>
 
@@ -119,9 +119,9 @@
                         <div class="absolute inset-0 opacity-30 motion-safe:animate-shimmer"
                              style="background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.6) 50%, transparent 70%); background-size: 200% 100%;"></div>
                         <div class="relative">
-                            <p class="text-[11px] font-bold uppercase tracking-[0.18em] text-brand-900/80">Earn an extra</p>
+                            <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-900/80">Earn an extra</p>
                             <p class="mt-1 font-display text-5xl font-black tracking-tight text-brand-950 sm:text-6xl" x-text="money(savings)"></p>
-                            <p class="mt-2 text-sm font-semibold text-brand-900">
+                            <p class="mt-2  font-semibold text-brand-900">
                                 per year with Taylor
                                 <span x-show="savingsPct > 0">&middot; <span x-text="savingsPct + '%'"></span> more take-home</span>
                             </p>
@@ -131,7 +131,7 @@
                     {{-- Side by side bars --}}
                     <div class="space-y-3">
                         <div>
-                            <div class="flex items-center justify-between text-xs">
+                            <div class="flex items-center justify-between">
                                 <span class="font-semibold text-accent-300">Taylor take-home</span>
                                 <span class="font-display font-bold text-white" x-text="money(taylorAnnual)"></span>
                             </div>
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="flex items-center justify-between text-xs">
+                            <div class="flex items-center justify-between">
                                 <span class="font-semibold text-white/60">Current brokerage take-home</span>
                                 <span class="font-display font-bold text-white/80" x-text="money(currentAnnual)"></span>
                             </div>
@@ -154,9 +154,9 @@
 
                     {{-- Taylor cap callout --}}
                     <div class="rounded-xl border border-accent-400/30 bg-white/5 p-4">
-                        <p class="text-[11px] font-semibold uppercase tracking-wider text-accent-300">Your max possible cost at Taylor</p>
-                        <p class="mt-1 font-display text-2xl font-bold text-white">$1,188 / yr</p>
-                        <p class="mt-1 text-[11px] text-white/60">$99 &times; 12. No splits. No transaction fees. No franchise fees. No surprises.</p>
+                        <p class="text-sm font-semibold uppercase tracking-wider text-accent-300">Your max possible cost at Taylor</p>
+                        <p class="my-4 font-display text-3xl font-bold text-white">$1,188 / yr</p>
+                        <p class="mt-1 text-sm text-white/60">$99 &times; 12. No splits. No transaction fees. No franchise fees. No surprises.</p>
                     </div>
 
                     <p class="text-[11px] leading-relaxed text-white/50">
