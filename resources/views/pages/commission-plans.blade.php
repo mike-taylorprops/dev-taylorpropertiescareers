@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('title', 'Commission Plans | Taylor Properties')
-@section('description', 'Three plans, all built around 100% commission. Pick what fits, or build your own.')
+@section('description', '$99 a month, 100% commission. The plan most agents pick - plus two alternatives if it doesn\'t fit your business.')
 
 @section('content')
 
     <x-page-hero eyebrow="Pick your plan"
-                 title="Three plans. <span class='text-gradient'>One promise.</span>"
-                 subtitle="100% commission across the board. Pick the structure that matches your business - or talk to us about a custom plan.">
+                 title="$99 a month. <span class='text-gradient'>100% commission.</span>"
+                 subtitle="The plan most of our agents are on. If it's not the right fit, two alternatives are below - or talk to us about a custom plan.">
         <x-slot:actions>
             <x-button href="#calculator" variant="primary" size="lg">Run the numbers</x-button>
             <x-button :href="route('compare')" variant="ghost" size="lg">Compare brokerages</x-button>

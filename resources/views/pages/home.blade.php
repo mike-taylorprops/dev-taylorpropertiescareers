@@ -6,7 +6,7 @@
 @section('content')
 
     {{-- Hero --}}
-    <section class="relative isolate overflow-hidden bg-brand-950 pt-28 pb-24 text-white sm:pt-32 sm:pb-32 lg:pt-36 lg:pb-40">
+    <section class="relative isolate overflow-hidden bg-brand-950 pt-8 pb-24 text-white sm:pt-32 sm:pb-32 lg:pt-24 lg:pb-40">
         <div class="absolute -top-32 -left-32 h-[34rem] w-[34rem] rounded-full bg-brand-500/40 blur-3xl motion-safe:animate-blob"></div>
         <div class="absolute top-60 -right-40 h-[24rem] w-[24rem] rounded-full bg-white/8 blur-3xl motion-safe:animate-blob-slow"></div>
         <div class="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-brand-400/30 blur-3xl motion-safe:animate-float"></div>
@@ -26,36 +26,41 @@
 
             {{-- Headline numbers - the first thing seen --}}
             <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal">
-                <dl class="overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur divide-y divide-white/10 sm:grid sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:rounded-3xl">
+                <dl class="overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur divide-y divide-white/10 sm:grid sm:grid-cols-2 sm:divide-x sm:divide-y-0 sm:rounded-3xl lg:grid-cols-3">
                     <div class="flex items-center justify-between gap-4 px-5 py-4 sm:block sm:px-6 sm:py-7 sm:text-center">
                         <dt class="text-xs font-semibold uppercase tracking-[0.15em] text-accent-300">Monthly Fee</dt>
-                        <dd class="font-display text-4xl font-black tracking-tight text-white sm:mt-2 sm:text-5xl lg:text-6xl">$99</dd>
+                        <dd class="font-display text-4xl font-black tracking-tight text-white sm:mt-2 sm:text-5xl lg:text-5xl">$99</dd>
                     </div>
                     <div class="flex items-center justify-between gap-4 px-5 py-4 sm:block sm:px-6 sm:py-7 sm:text-center">
                         <dt class="text-xs font-semibold uppercase tracking-[0.15em] text-accent-300">Agent Transaction Fees</dt>
-                        <dd class="font-display text-4xl font-black tracking-tight text-white sm:mt-2 sm:text-5xl lg:text-6xl">$0</dd>
+                        <dd class="font-display text-4xl font-black tracking-tight text-white sm:mt-2 sm:text-5xl lg:text-5xl">$0</dd>
                     </div>
-                    <div class="flex items-center justify-between gap-4 px-5 py-4 sm:block sm:px-6 sm:py-7 sm:text-center">
+                    <div class="flex items-center justify-between gap-4 px-5 py-4 sm:block sm:px-6 sm:py-7 sm:text-center sm:border-t sm:border-white/10 sm:divide-y-0 lg:border-t-0">
                         <dt class="text-xs font-semibold uppercase tracking-[0.15em] text-accent-300">Commission Split</dt>
-                        <dd class="font-display text-4xl font-black tracking-tight text-white sm:mt-2 sm:text-5xl lg:text-6xl">100%</dd>
+                        <dd class="font-display text-4xl font-black tracking-tight text-white sm:mt-2 sm:text-5xl lg:text-5xl">100%</dd>
+                    </div>
+                    <div class="flex items-center justify-between gap-4 px-5 py-4 sm:block sm:px-6 sm:py-7 sm:text-center sm:border-t sm:border-white/10 lg:hidden">
+                        <dt class="text-xs font-semibold uppercase tracking-[0.15em] text-accent-300">Annual Fees Cap</dt>
+                        <dd class="font-display text-2xl font-bold tracking-tight text-white/85 sm:mt-2 sm:text-3xl">$1,188</dd>
                     </div>
                 </dl>
             </div>
 
-            <div class="mt-12 grid items-center gap-12 sm:mt-16 lg:grid-cols-12">
+            <div class="mt-16 grid items-center gap-12 sm:mt-16 lg:grid-cols-12">
                 <div class="lg:col-span-7">
                     <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal">
-                        <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent-300 backdrop-blur">
-                            <span class="grid h-2 w-2 place-items-center rounded-full bg-accent-400"></span>
+                        <p class="flex items-center justify-center gap-2 text-center text-[11px] font-bold uppercase tracking-[0.2em] text-accent-300 lg:justify-start lg:text-left lg:text-xs">
+                            <span class="h-1 w-6 rounded-full bg-accent-400"></span>
                             Maryland's Largest Independent Brokerage
-                        </span>
-                        <h1 class="mt-6 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+                            <span class="h-1 w-6 rounded-full bg-accent-400 lg:hidden"></span>
+                        </p>
+                        <h1 class="mt-5 text-center font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-left lg:text-7xl">
                             Keep <span class="text-gradient">100%</span> of your commission.
                         </h1>
-                        <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/80 sm:text-xl">
+                        <p class="mx-auto mt-6 max-w-xl text-center text-lg leading-relaxed text-white/80 sm:text-xl lg:mx-0 lg:text-left">
                             $99 a month. Zero transaction fees. No franchise fees. No surprises. The math is simple - and it's in your favor.
                         </p>
-                        <div class="mt-10 flex flex-wrap items-center gap-4">
+                        <div class="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
                             <x-button :href="route('join')" variant="primary" size="lg">
                                 Join Taylor
                                 <x-icon name="arrow-right" class="h-5 w-5" />
