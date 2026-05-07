@@ -60,7 +60,7 @@
 
                 {{-- Back Office --}}
                 <div class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 p-8 text-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl">
-                    <div class="absolute -top-16 -right-16 h-48 w-48 rounded-full bg-accent-400/30 blur-3xl"></div>
+                    <div class="absolute -top-16 -right-16 h-48 w-48 rounded-full bg-white/30 blur-3xl"></div>
                     <div class="relative">
                         <div class="flex items-center gap-3">
                             <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-300">
@@ -117,7 +117,7 @@
                  class="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl bg-white shadow-2xl"
                  style="display:none">
                 <div class="relative overflow-hidden bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 p-8 text-white">
-                    <div class="absolute -top-20 -right-20 h-56 w-56 rounded-full bg-accent-400/30 blur-3xl"></div>
+                    <div class="absolute -top-20 -right-20 h-56 w-56 rounded-full bg-white/30 blur-3xl"></div>
                     <button @click="close"
                             class="absolute right-4 top-4 rounded-full bg-white/10 p-2 text-white hover:bg-white/20"
                             aria-label="Close">

@@ -6,7 +6,7 @@
 @section('content')
 
     {{-- Hero --}}
-    <section class="relative isolate overflow-hidden bg-brand-950 pt-8 pb-24 text-white sm:pt-32 sm:pb-32 lg:pt-24 lg:pb-40">
+    <section class="relative isolate overflow-hidden bg-brand-500 pt-8 pb-24 text-white sm:pt-32 sm:pb-32 lg:pt-24 lg:pb-40">
         <div class="absolute -top-32 -left-32 h-[34rem] w-[34rem] rounded-full bg-brand-500/40 blur-3xl motion-safe:animate-blob"></div>
         <div class="absolute top-60 -right-40 h-[24rem] w-[24rem] rounded-full bg-white/8 blur-3xl motion-safe:animate-blob-slow"></div>
         <div class="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-brand-400/30 blur-3xl motion-safe:animate-float"></div>
@@ -17,10 +17,10 @@
             {{-- Logo - centered, prominent, the brand front and center --}}
             <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal mb-8 flex justify-center sm:mb-12">
                 <div class="relative">
-                    <div class="absolute inset-0 -z-10 scale-150 rounded-full bg-gradient-to-br from-accent-400/30 via-brand-400/20 to-accent-300/30 blur-3xl motion-safe:animate-blob"></div>
+                    <div class="absolute inset-0 -z-10 scale-150 rounded-full bg-gradient-to-br from-white/30 via-brand-400/20 to-white/30 blur-3xl motion-safe:animate-blob"></div>
                     <img src="{{ asset('images/logo-white.png') }}"
                          alt="Taylor Properties"
-                         class="h-16 w-auto drop-shadow-[0_8px_32px_rgba(245,179,36,0.45)] sm:h-20 lg:h-24">
+                         class="h-16 w-auto drop-shadow-[0_8px_32px_rgba(255,255,255,0.45)] sm:h-20 lg:h-24">
                 </div>
             </div>
 
@@ -75,7 +75,7 @@
 
                 <div class="lg:col-span-5">
                     <div x-data x-intersect.once="$el.classList.add('is-visible')" class="reveal motion-safe:animate-float relative">
-                        <div class="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-accent-400/30 to-brand-400/30 blur-2xl"></div>
+                        <div class="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-white/30 to-brand-400/30 blur-2xl"></div>
                         <div class="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
                             <h2 class="font-display text-2xl font-bold leading-tight text-white sm:text-3xl">
                                 Your annual cap <span class="text-accent-300">at Taylor</span>

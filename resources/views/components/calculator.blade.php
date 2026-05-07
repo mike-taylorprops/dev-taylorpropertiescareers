@@ -106,7 +106,7 @@
 
         <div class="lg:col-span-2">
             <div class="relative h-full overflow-hidden rounded-2xl bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 p-6 text-white sm:p-8">
-                <div class="absolute -top-12 -right-12 h-48 w-48 rounded-full bg-accent-400/30 blur-3xl motion-safe:animate-blob"></div>
+                <div class="absolute -top-12 -right-12 h-48 w-48 rounded-full bg-white/30 blur-3xl motion-safe:animate-blob"></div>
 
                 <div class="relative space-y-6">
                     <div>

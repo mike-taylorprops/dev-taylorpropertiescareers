@@ -6,7 +6,7 @@
 @section('content')
 
     <section class="relative isolate overflow-hidden bg-gradient-to-br from-brand-900 via-brand-800 to-brand-950 pt-32 pb-20 text-white sm:pt-44 sm:pb-32">
-        <div class="absolute -top-32 -left-24 h-[34rem] w-[34rem] rounded-full bg-accent-400/30 blur-3xl motion-safe:animate-blob"></div>
+        <div class="absolute -top-32 -left-24 h-[34rem] w-[34rem] rounded-full bg-white/30 blur-3xl motion-safe:animate-blob"></div>
         <div class="absolute -bottom-40 right-[-10rem] h-[34rem] w-[34rem] rounded-full bg-brand-400/30 blur-3xl motion-safe:animate-blob-slow"></div>
         <div class="absolute inset-0 bg-grid opacity-30"></div>
 

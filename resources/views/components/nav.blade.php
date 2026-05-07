@@ -42,7 +42,7 @@
 
 <header
     x-data="nav"
-    :class="scrolled || open ? 'bg-brand-900/95 backdrop-blur-md shadow-lg' : '{{ $transparent ? 'bg-transparent' : 'bg-brand-900' }}'"
+    :class="scrolled || open ? 'bg-brand-500/95 backdrop-blur-md shadow-lg' : '{{ $transparent ? 'bg-transparent' : 'bg-brand-500' }}'"
     class="fixed inset-x-0 top-0 z-40 transition-all duration-300"
 >
     <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8">
@@ -124,7 +124,7 @@
          x-transition:enter="transition ease-out duration-200"
          x-transition:enter-start="opacity-0 -translate-y-2"
          x-transition:enter-end="opacity-100 translate-y-0"
-         class="max-h-[80vh] overflow-y-auto border-t border-white/10 bg-brand-900/95 backdrop-blur-md lg:hidden"
+         class="max-h-[80vh] overflow-y-auto border-t border-white/10 bg-brand-500/95 backdrop-blur-md lg:hidden"
          style="display:none">
         <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6">
             <div class="space-y-1">

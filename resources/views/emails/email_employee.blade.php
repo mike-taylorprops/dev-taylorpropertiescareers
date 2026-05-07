@@ -7,7 +7,7 @@
 <body style="font-family: Arial, sans-serif; background:#f5f7fb; padding:24px;">
     <table style="max-width:560px; margin:0 auto; background:#fff; border-radius:12px; overflow:hidden; border:1px solid #e2e8f0;">
         <tr>
-            <td style="background:#2f569d; padding:20px 24px;">
+            <td style="background:#225a96; padding:20px 24px;">
                 <h1 style="color:#fff; font-size:20px; margin:0;">Taylor Properties Careers</h1>
                 <p style="color:#cbd5e1; font-size:13px; margin:4px 0 0;">A visitor sent a message from the website</p>
             </td>

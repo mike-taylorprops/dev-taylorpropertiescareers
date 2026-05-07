@@ -54,8 +54,7 @@
 
             {{-- Decorative blob in corner --}}
             <div class="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full opacity-30 blur-3xl transition-opacity duration-300 group-hover:opacity-60"
-                 style="background: radial-gradient(circle, currentColor, transparent 70%);"
-                 :class="'{{ $v['stat'] }}'"></div>
+                 style="background: radial-gradient(circle, white, transparent 70%);"></div>
 
             <div class="relative flex h-full flex-col">
                 <div class="flex items-start justify-between">
@@ -88,7 +87,7 @@
 
         {{-- Back --}}
         <div class="backface-hidden rotate-y-180 absolute inset-0 flex flex-col justify-between overflow-hidden rounded-2xl bg-gradient-to-br from-brand-800 via-brand-900 to-brand-950 p-6 text-white shadow-xl">
-            <div class="absolute -bottom-20 -left-12 h-48 w-48 rounded-full bg-accent-400/20 blur-3xl"></div>
+            <div class="absolute -bottom-20 -left-12 h-48 w-48 rounded-full bg-white/20 blur-3xl"></div>
             <div class="absolute -top-12 -right-12 h-40 w-40 rounded-full bg-brand-400/30 blur-3xl"></div>
 
             <div class="relative">

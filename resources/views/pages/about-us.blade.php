@@ -37,7 +37,7 @@
 
                 <div class="lg:col-span-5">
                     <div class="relative">
-                        <div class="absolute -inset-4 rounded-3xl bg-gradient-to-br from-brand-500/20 via-accent-400/20 to-brand-700/20 blur-2xl"></div>
+                        <div class="absolute -inset-4 rounded-3xl bg-gradient-to-br from-brand-500/20 via-white/20 to-brand-700/20 blur-2xl"></div>
                         <div class="relative grid auto-rows-fr grid-cols-2 gap-4">
                             <div class="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-md">
                                 <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">Founded</p>

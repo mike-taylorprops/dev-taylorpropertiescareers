@@ -4,7 +4,7 @@
 ])
 
 <section class="relative overflow-hidden bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 py-20 text-white sm:py-28">
-    <div class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-accent-400/30 blur-3xl motion-safe:animate-blob"></div>
+    <div class="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-white/30 blur-3xl motion-safe:animate-blob"></div>
     <div class="absolute -bottom-32 -right-24 h-[28rem] w-[28rem] rounded-full bg-brand-400/30 blur-3xl motion-safe:animate-blob-slow"></div>
     <div class="absolute inset-0 bg-grid opacity-30"></div>
 
