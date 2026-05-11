@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Mentoring & Training | Taylor Properties')
 @section('description', 'One-on-one mentorship, live training, masterminds, and continuing education through Metropolitan Real Estate Academy and The CE Shop.')

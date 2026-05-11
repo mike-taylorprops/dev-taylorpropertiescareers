@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Join Taylor Properties')
 @section('description', 'Start the process to join Maryland\'s largest independent brokerage. 100% commission. $99 a month.')

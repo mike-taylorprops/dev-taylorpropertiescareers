@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Compare Brokerages | Taylor Properties')
 @section('description', 'See what Taylor Properties charges - then run your own numbers against your current brokerage. The math is whatever you make it.')
@@ -57,7 +57,7 @@
 
             <div class="mt-10 mx-auto max-w-3xl rounded-2xl border border-brand-100 bg-brand-50 p-6 text-center">
                 <p class="text-lg text-slate-700">
-                    Most brokerages bury the math in splits, caps, royalty fees, transaction fees, and "platform" surcharges. We don't. <span class="font-semibold text-brand-900">${{ number_format($taylor['annual_cap_usd']) }}/year is the whole bill.</span>
+                    Most brokerages bury the math in splits, caps, royalty fees, agent transaction fees, and "platform" surcharges. We don't. <span class="font-semibold text-brand-900">${{ number_format($taylor['annual_cap_usd']) }}/year is the whole bill.</span>
                 </p>
             </div>
         </div>

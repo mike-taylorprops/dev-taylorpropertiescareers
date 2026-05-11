@@ -66,7 +66,13 @@
         </div>
 
         <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/50 sm:flex-row">
-            <p>&copy; {{ date('Y') }} Taylor Properties. All rights reserved. Equal Housing Opportunity.</p>
+            <p>&copy; {{ date('Y') }} Taylor Properties. All rights reserved.</p>
+            <div class="flex items-center gap-3">
+                <img src="{{ asset('images/equal-housing-opportunity.svg') }}"
+                     alt="Equal Housing Opportunity"
+                     class="h-8 w-8 opacity-70">
+                <span>Equal Housing Opportunity</span>
+            </div>
             <p>Licensed in MD, DC, VA, DE, PA</p>
         </div>
     </div>

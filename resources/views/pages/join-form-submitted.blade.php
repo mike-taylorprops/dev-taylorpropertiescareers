@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Welcome to Taylor Properties')
 @section('description', 'Your application is in. Here\'s what happens next.')

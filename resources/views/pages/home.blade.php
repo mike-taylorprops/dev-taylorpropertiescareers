@@ -1,7 +1,7 @@
 @extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Taylor Properties | Keep 100% of Your Commission')
-@section('description', 'Maryland\'s largest independent brokerage. 100% commission, $99 a month, zero transaction fees. Keep more of what you earn.')
+@section('description', 'Maryland\'s largest independent brokerage. 100% commission, $99 a month, zero agent transaction fees. Keep more of what you earn.')
 
 @section('content')
 
@@ -58,7 +58,7 @@
                             Keep <span class="text-gradient">100%</span> of your commission.
                         </h1>
                         <p class="mx-auto mt-6 max-w-xl text-center text-lg leading-relaxed text-white/80 sm:text-xl lg:mx-0 lg:text-left">
-                            $99 a month. Zero transaction fees. No franchise fees. No surprises. The math is simple - and it's in your favor.
+                            $99 a month. Zero agent transaction fees. No franchise fees. No surprises. The math is simple - and it's in your favor.
                         </p>
                         <div class="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
                             <x-button :href="route('join')" variant="primary" size="lg">
@@ -142,7 +142,7 @@
                          icon="dollar"
                          stat="$99"
                          title="Lowest Fixed Cost"
-                         teaser="No franchise fees. No royalty fees. No per-transaction fees. No desk fees.">
+                         teaser="No franchise fees. No royalty fees. No per-transaction agent fees. No desk fees.">
                 $99 a month covers everything. The bill is the bill - same number, every month, forever. Most brokerages charge that much in tech fees alone.
             </x-flip-card>
 

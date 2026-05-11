@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Commission Plans | Taylor Properties')
 @section('description', '$99 a month, 100% commission. The plan most agents pick - plus two alternatives if it doesn\'t fit your business.')
@@ -29,7 +29,7 @@
                         <span class="text-white/70">/month</span>
                     </p>
                     <ul class="mt-6 space-y-3 text-sm text-white/90">
-                        @foreach (['100% commission - keep every dollar', 'Zero transaction fees', 'No franchise or royalty fees', 'Free CRM, IDX site, e-sign', 'Mentorship + training included', 'Same low fee, every month'] as $f)
+                        @foreach (['100% commission - keep every dollar', 'Zero agent transaction fees', 'No franchise or royalty fees', 'Free CRM, IDX site, e-sign', 'Mentorship + training included', 'Same low fee, every month'] as $f)
                             <li class="flex items-start gap-2">
                                 <x-icon name="check" class="h-5 w-5 shrink-0 text-accent-300" />
                                 <span>{{ $f }}</span>

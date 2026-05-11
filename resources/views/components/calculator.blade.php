@@ -156,7 +156,7 @@
                     <div class="rounded-xl border border-accent-400/30 bg-white/5 p-4">
                         <p class="text-sm font-semibold uppercase tracking-wider text-accent-300">Your max possible cost at Taylor</p>
                         <p class="my-4 font-display text-3xl font-bold text-white">$1,188 / yr</p>
-                        <p class="mt-1 text-sm text-white/60">$99 &times; 12. No splits. No transaction fees. No franchise fees. No surprises.</p>
+                        <p class="mt-1 text-sm text-white/60">$99 &times; 12. No splits. No agent transaction fees. No franchise fees. No surprises.</p>
                     </div>
 
                     <p class="text-[11px] leading-relaxed text-white/50">

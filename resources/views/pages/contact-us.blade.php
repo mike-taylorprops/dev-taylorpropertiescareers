@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Contact Us | Taylor Properties')
 @section('description', 'Talk to a real person. Phone, email, or message form - we\'re here.')

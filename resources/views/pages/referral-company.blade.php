@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Referral Company | Taylor Properties')
 @section('description', 'Hold your real estate license for $99/year and earn 85% on every referral. Perfect for licensed agents who want to refer business without active production.')

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Technology | Taylor Properties')
 @section('description', 'BoldTrail front-end and BoldTrail Back Office (formerly Brokermint) - one unified platform for CRM, marketing, websites, and brokerage operations.')
