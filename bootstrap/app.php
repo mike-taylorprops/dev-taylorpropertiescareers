@@ -9,10 +9,12 @@ use Illuminate\Http\Request;
  * Read TRUSTED_PROXIES from .env directly. Returns '*', an array of IPs/CIDRs,
  * or null when not set. We can't use env() here - .env isn't loaded yet when
  * the withMiddleware callback fires in Laravel 11+.
+ *
+ * Declared as a closure (not a named function) so this file is safe to include
+ * more than once without triggering a "Cannot redeclare function" fatal error.
  */
-function trustedProxiesFromEnv(string $envPath): string|array|null
-{
-    if (!is_readable($envPath)) {
+$trustedProxiesFromEnv = function (string $envPath): string|array|null {
+    if (! is_readable($envPath)) {
         return null;
     }
     foreach (file($envPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
@@ -20,17 +22,19 @@ function trustedProxiesFromEnv(string $envPath): string|array|null
         if ($line === '' || $line[0] === '#') {
             continue;
         }
-        if (!str_starts_with($line, 'TRUSTED_PROXIES=')) {
+        if (! str_starts_with($line, 'TRUSTED_PROXIES=')) {
             continue;
         }
         $value = trim(substr($line, strlen('TRUSTED_PROXIES=')), " \t\"'");
         if ($value === '') {
             return null;
         }
+
         return $value === '*' ? '*' : array_map('trim', explode(',', $value));
     }
+
     return null;
-}
+};
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -38,8 +42,8 @@ return Application::configure(basePath: dirname(__DIR__))
         commands: __DIR__.'/../routes/console.php',
         health: '/up',
     )
-    ->withMiddleware(function (Middleware $middleware): void {
-        $trustedProxies = trustedProxiesFromEnv(dirname(__DIR__) . '/.env');
+    ->withMiddleware(function (Middleware $middleware) use ($trustedProxiesFromEnv): void {
+        $trustedProxies = $trustedProxiesFromEnv(dirname(__DIR__).'/.env');
         if ($trustedProxies !== null) {
             $middleware->trustProxies(
                 at: $trustedProxies,
