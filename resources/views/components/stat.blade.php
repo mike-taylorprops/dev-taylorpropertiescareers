@@ -16,7 +16,7 @@
     <div
         x-data="counter({{ $number }}, {{ $opts }})"
         x-intersect.once="start"
-        class="font-display text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl {{ $isDark ? 'text-white' : 'text-brand-700' }}"
+        class="stat-hero lg:text-6xl {{ $isDark ? 'text-white' : 'text-brand-700' }}"
     >{{ $prefix }}0{{ $suffix }}</div>
     <div class="mt-3 text-sm font-semibold uppercase tracking-wider {{ $isDark ? 'text-accent-300' : 'text-brand-500' }}">
         {{ $label }}

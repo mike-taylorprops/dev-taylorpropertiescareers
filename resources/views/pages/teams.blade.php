@@ -19,7 +19,7 @@
             <div class="mx-auto grid h-20 w-20 place-items-center rounded-2xl bg-brand-50 text-brand-600">
                 <x-icon name="users" class="h-10 w-10" />
             </div>
-            <h2 class="mt-6 font-display text-3xl font-bold text-brand-900 sm:text-4xl">This page is being built.</h2>
+            <h2 class="heading-page-sm mt-4 sm:mt-6">This page is being built.</h2>
             <p class="mt-4 text-slate-600">Soon you'll be able to browse every team inside Taylor Properties - their focus, their leaders, and how to join them.</p>
         </div>
     </section>

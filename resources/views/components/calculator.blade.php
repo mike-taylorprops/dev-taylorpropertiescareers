@@ -5,7 +5,7 @@
     x-cloak
     {{ $attributes -> merge(['class' => 'overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl shadow-brand-500/10']) }}
 >
-    <div class="grid gap-6 p-4 sm:gap-8 sm:p-10 lg:grid-cols-5 lg:gap-12">
+    <div class="grid gap-6 py-4 px-2 sm:gap-8 sm:p-10 lg:grid-cols-5 lg:gap-12">
         <div class="space-y-6 sm:space-y-8 lg:col-span-3">
             <div>
                 <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">Earnings Calculator</p>

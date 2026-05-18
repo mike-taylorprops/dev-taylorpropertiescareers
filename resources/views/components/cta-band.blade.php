@@ -10,7 +10,7 @@
 
     <div class="relative page-container-cta">
         <h2 class="heading-section">{{ $title }}</h2>
-        <p class="mx-auto mt-3 max-w-2xl text-base text-white/80 sm:mt-5 sm:text-lg">{{ $subtitle }}</p>
+        <p class="mx-auto mt-3 max-w-2xl text-sm text-white/80 sm:mt-5 sm:text-lg">{{ $subtitle }}</p>
         <div class="mt-6 flex flex-wrap items-center justify-center gap-3 sm:mt-10 sm:gap-4">
             <x-button :href="route('join')" variant="primary" size="lg">
                 Get Started

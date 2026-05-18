@@ -9,7 +9,7 @@
     $sizes = [
         'sm' => 'px-4 py-2 text-sm',
         'md' => 'px-6 py-3 text-base',
-        'lg' => 'px-8 py-4 text-lg',
+        'lg' => 'px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg',
     ];
     $variants = [
         'primary' => 'bg-accent-400 text-brand-900 shadow-lg shadow-accent-400/30 hover:bg-accent-300 hover:shadow-accent-400/50 focus-visible:ring-accent-400',

@@ -12,10 +12,10 @@
 
     <section class="bg-white section-y">
         <div class="page-container">
-            <div class="grid gap-12 lg:grid-cols-2">
+            <div class="grid gap-8 lg:grid-cols-2 sm:gap-12">
 
                 <div>
-                    <h2 class="font-display text-3xl font-bold text-brand-900">We're easy to reach.</h2>
+                    <h2 class="heading-page-sm">We're easy to reach.</h2>
                     <p class="mt-3 text-slate-600">Pick the channel that works for you. We respond same-day on weekdays.</p>
 
                     <div class="mt-8 space-y-4">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-xl">
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 card-pad shadow-xl">
                     <h2 class="font-display text-2xl font-bold text-brand-900">Send us a message</h2>
                     <p class="mt-2 text-sm text-slate-600">We'll get back to you within one business day.</p>
                     <div class="mt-6">

@@ -29,34 +29,34 @@
         <div class="page-container">
             <div class="text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">What Taylor charges</p>
-                <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-5xl">No splits. No surprises. <span class="text-accent-500">One number.</span></h2>
+                <h2 class="heading-page mt-3">No splits. No surprises. <span class="text-accent-500">One number.</span></h2>
             </div>
 
-            <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                <div class="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+            <div class="mt-8 grid gap-4 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+                <div class="rounded-3xl border border-slate-200 bg-white card-pad text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl">
                     <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">Monthly Fee</p>
-                    <p class="mt-3 font-display text-5xl font-bold text-brand-900">${{ $taylor['monthly_fee'] }}</p>
+                    <p class="mt-3 stat-hero text-brand-900">${{ $taylor['monthly_fee'] }}</p>
                     <p class="mt-2 text-sm text-slate-600">Flat. Every agent. Every month.</p>
                 </div>
-                <div class="rounded-3xl border-2 border-accent-400 bg-gradient-to-br from-accent-400 to-accent-500 p-8 text-center text-brand-950 shadow-xl shadow-accent-400/20">
+                <div class="rounded-3xl border-2 border-accent-400 bg-gradient-to-br from-accent-400 to-accent-500 card-pad text-center text-brand-950 shadow-xl shadow-accent-400/20">
                     <p class="text-xs font-bold uppercase tracking-wider text-brand-900/80">Annual Cap</p>
-                    <p class="mt-3 font-display text-5xl font-bold">${{ number_format($taylor['annual_cap_usd']) }}</p>
+                    <p class="mt-3 stat-hero">${{ number_format($taylor['annual_cap_usd']) }}</p>
                     <p class="mt-2 text-sm font-semibold text-brand-900">The entire annual bill.</p>
                 </div>
-                <div class="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="rounded-3xl border border-slate-200 bg-white card-pad text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl">
                     <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">Agent Transaction Fee</p>
-                    <p class="mt-3 font-display text-5xl font-bold text-brand-900">$0</p>
+                    <p class="mt-3 stat-hero text-brand-900">$0</p>
                     <p class="mt-2 text-sm text-slate-600">Not per deal. Not at year-end. Zero.</p>
                 </div>
-                <div class="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="rounded-3xl border border-slate-200 bg-white card-pad text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl">
                     <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">Commission Split</p>
-                    <p class="mt-3 font-display text-5xl font-bold text-brand-900">100%</p>
+                    <p class="mt-3 stat-hero text-brand-900">100%</p>
                     <p class="mt-2 text-sm text-slate-600">Forever. From your first deal.</p>
                 </div>
             </div>
 
-            <div class="mt-10 mx-auto max-w-3xl rounded-2xl border border-brand-100 bg-brand-50 p-6 text-center">
-                <p class="text-lg text-slate-700">
+            <div class="mt-8 mx-auto max-w-3xl rounded-2xl border border-brand-100 bg-brand-50 p-5 text-center sm:mt-10 sm:p-6">
+                <p class="prose-body text-slate-700">
                     Most brokerages bury the math in splits, caps, royalty fees, agent transaction fees, and "platform" surcharges. We don't. <span class="font-semibold text-brand-900">${{ number_format($taylor['annual_cap_usd']) }}/year is the whole bill.</span>
                 </p>
             </div>
@@ -69,7 +69,7 @@
             <div class="page-container">
                 <div class="text-center">
                     <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">Verified comparisons</p>
-                    <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-4xl">Side by side, sourced.</h2>
+                    <h2 class="heading-page-sm mt-3">Side by side, sourced.</h2>
                     <p class="mt-3 text-sm text-slate-600">Every cell is sourced directly from the brokerage's published fee structure.</p>
                 </div>
 
@@ -144,7 +144,7 @@
         <div class="page-container">
             <div class="mx-auto max-w-3xl text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">The honest comparison</p>
-                <h2 class="mt-3 font-display text-3xl font-bold tracking-tight text-brand-900 sm:text-5xl">Use your real numbers.</h2>
+                <h2 class="heading-page mt-3">Use your real numbers.</h2>
                 <p class="mt-3 text-sm text-slate-600">We don't pretend to know exactly what you pay today. Type in your actual fees and split - we'll show you the difference at Taylor.</p>
             </div>
             <div class="mt-12">

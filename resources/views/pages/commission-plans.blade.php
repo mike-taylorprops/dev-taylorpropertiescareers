@@ -19,13 +19,13 @@
         <div class="page-container">
             <div class="grid gap-6 lg:grid-cols-3">
 
-                <div class="relative rounded-3xl border-2 border-accent-400 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 p-8 text-white shadow-2xl shadow-accent-400/20">
+                <div class="relative rounded-3xl border-2 border-accent-400 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 card-pad text-white shadow-2xl shadow-accent-400/20">
                     <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent-400 px-4 py-1 text-xs font-bold uppercase tracking-wider text-brand-900">Most Popular</span>
                     <p class="text-xs font-semibold uppercase tracking-wider text-accent-300">Standard</p>
-                    <h3 class="mt-2 font-display text-3xl font-bold">100% Plan</h3>
+                    <h3 class="mt-2 font-display text-2xl font-bold sm:text-3xl">100% Plan</h3>
                     <p class="mt-2 text-sm text-white/80">For most full-time agents. Lowest fixed cost, highest take-home.</p>
                     <p class="mt-6">
-                        <span class="font-display text-5xl font-bold text-accent-300">$99</span>
+                        <span class="stat-hero text-accent-300">$99</span>
                         <span class="text-white/70">/month</span>
                     </p>
                     <ul class="mt-6 space-y-3 text-sm text-white/90">
@@ -42,12 +42,12 @@
                     </button>
                 </div>
 
-                <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl">
+                <div class="rounded-3xl border border-slate-200 bg-white card-pad shadow-sm transition hover:shadow-xl">
                     <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Custom</p>
-                    <h3 class="mt-2 font-display text-3xl font-bold text-brand-900">Build Your Own</h3>
+                    <h3 class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">Build Your Own</h3>
                     <p class="mt-2 text-sm text-slate-600">Have a team? High volume? Specialty market? Let's design a plan around your business.</p>
                     <p class="mt-6">
-                        <span class="font-display text-5xl font-bold text-brand-700">Talk to us</span>
+                        <span class="stat-hero text-brand-700">Talk to us</span>
                     </p>
                     <ul class="mt-6 space-y-3 text-sm text-slate-700">
                         @foreach (['Custom split or flat-fee structure', 'Team-friendly pricing', 'Specialty (commercial, rental) terms', 'Volume incentives', 'Dedicated broker support', 'Everything in Standard, plus more'] as $f)
@@ -63,12 +63,12 @@
                     </button>
                 </div>
 
-                <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-xl">
+                <div class="rounded-3xl border border-slate-200 bg-white card-pad shadow-sm transition hover:shadow-xl">
                     <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Referral</p>
-                    <h3 class="mt-2 font-display text-3xl font-bold text-brand-900">Referral Plan</h3>
+                    <h3 class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">Referral Plan</h3>
                     <p class="mt-2 text-sm text-slate-600">For licensees who want to refer business without active production.</p>
                     <p class="mt-6">
-                        <span class="font-display text-5xl font-bold text-brand-700">$99</span>
+                        <span class="stat-hero text-brand-700">$99</span>
                         <span class="text-slate-500">/year</span>
                     </p>
                     <ul class="mt-6 space-y-3 text-sm text-slate-700">
@@ -118,24 +118,24 @@
         <div class="page-container-sm">
             <div class="text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">Real example</p>
-                <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-4xl">Two listings. $400k each. 3% commission.</h2>
+                <h2 class="heading-page-sm mt-3">Two listings. $400k each. 3% commission.</h2>
             </div>
 
-            <div class="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
+            <div class="mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl sm:mt-12">
                 <div class="grid gap-px bg-slate-100 sm:grid-cols-3">
-                    <div class="bg-white p-8 text-center">
+                    <div class="bg-white card-pad text-center">
                         <p class="text-xs uppercase tracking-wider text-slate-500">Two sales @ 3%</p>
-                        <p class="mt-2 font-display text-3xl font-bold text-brand-900">$24,000</p>
+                        <p class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">$24,000</p>
                         <p class="mt-1 text-xs text-slate-500">Gross commission</p>
                     </div>
-                    <div class="bg-white p-8 text-center">
+                    <div class="bg-white card-pad text-center">
                         <p class="text-xs uppercase tracking-wider text-slate-500">Monthly fee</p>
-                        <p class="mt-2 font-display text-3xl font-bold text-brand-900">- $99</p>
+                        <p class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">- $99</p>
                         <p class="mt-1 text-xs text-slate-500">Your only cost that month</p>
                     </div>
-                    <div class="bg-gradient-to-br from-brand-700 to-brand-950 p-8 text-center text-white">
+                    <div class="bg-gradient-to-br from-brand-700 to-brand-950 card-pad text-center text-white">
                         <p class="text-xs uppercase tracking-wider text-accent-300">You take home</p>
-                        <p class="mt-2 font-display text-3xl font-bold text-accent-300">$23,901</p>
+                        <p class="mt-2 font-display text-2xl font-bold text-accent-300 sm:text-3xl">$23,901</p>
                         <p class="mt-1 text-xs text-white/70">99.6% of gross</p>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
         <div class="page-container">
             <div class="mx-auto max-w-3xl text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">Plug in your numbers</p>
-                <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-5xl">Earnings calculator.</h2>
+                <h2 class="heading-page mt-3">Earnings calculator.</h2>
             </div>
             <div class="mt-12">
                 <x-calculator />

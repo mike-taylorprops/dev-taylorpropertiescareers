@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#225a96">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -49,7 +49,7 @@
 
     @stack('head')
 </head>
-<body class="bg-white text-slate-800 antialiased">
+<body class="nav-offset bg-white text-slate-800 antialiased">
 
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-brand-700 focus:text-white focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
 

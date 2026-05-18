@@ -12,7 +12,7 @@
         subtitle="The longest 'free' list in the business. Tabs below break it down by what kind of help you're looking for.">
     </x-page-hero>
 
-    <section class="bg-white py-16 sm:py-24" x-data="tabs(0)">
+    <section class="bg-white py-10 sm:py-24" x-data="tabs(0)">
         <div class="page-container">
 
             <div
@@ -27,14 +27,14 @@
                 @endforeach
             </div>
 
-            <div class="mt-12 grid gap-8 lg:grid-cols-12">
+            <div class="mt-8 grid gap-6 sm:mt-12 sm:gap-8 lg:grid-cols-12">
                 <div class="lg:col-span-8">
 
                     {{-- The Money --}}
                     <div x-show="is(0)" x-transition.opacity x-cloak>
                         <p class="text-brand-500 text-xs font-semibold uppercase tracking-wider">Lowest fixed cost in the
                             region</p>
-                        <h2 class="font-display text-brand-900 mt-2 text-3xl font-bold sm:text-4xl">More money, less math.
+                        <h2 class="heading-page-sm text-brand-900 mt-2">More money, less math.
                         </h2>
                         <p class="mt-4 text-slate-600">No franchise fees. No royalties. No agent transaction fees. No surprise
                             charges. The bill is the bill.</p>
@@ -59,7 +59,7 @@
                                 We're independent - we take 0%.
                             </x-flip-card>
                             <x-flip-card icon="lightning" title="Fast Pay" stat="Same Day"
-                                teaser="Funding day = pay day. No two-week wait." variant="light">
+                                teaser="Funding day = pay day. No two-week wait." variant="gold">
                                 When the deal funds, you get paid. Same day. Other shops make you wait 10-14 days for
                                 processing.
                             </x-flip-card>
@@ -70,7 +70,7 @@
                     <div x-show="is(1)" x-transition.opacity x-cloak style="display:none">
                         <p class="text-brand-500 text-xs font-semibold uppercase tracking-wider">Real people, real
                             availability</p>
-                        <h2 class="font-display text-brand-900 mt-2 text-3xl font-bold sm:text-4xl">A team that picks up.
+                        <h2 class="heading-page-sm text-brand-900 mt-2">A team that picks up.
                         </h2>
                         <p class="mt-4 text-slate-600">Brokerage support that doesn't require a help-desk ticket and a
                             48-hour wait.</p>
@@ -113,7 +113,7 @@
                     <div x-show="is(2)" x-transition.opacity x-cloak style="display:none">
                         <p class="text-brand-500 text-xs font-semibold uppercase tracking-wider">A tech stack that fights
                             for you</p>
-                        <h2 class="font-display text-brand-900 mt-2 text-3xl font-bold sm:text-4xl">All the tools, included.
+                        <h2 class="heading-page-sm text-brand-900 mt-2">All the tools, included.
                         </h2>
                         <p class="mt-4 text-slate-600">Everything you'd otherwise pay $300+/month for, included in your $99.
                         </p>
@@ -156,7 +156,7 @@
                 {{-- Sticky right rail --}}
                 <aside class="lg:col-span-4">
                     <div
-                        class="from-brand-700 via-brand-800 to-brand-950 sticky top-24 rounded-3xl border border-slate-200 bg-gradient-to-br p-8 text-white shadow-xl">
+                        class="from-brand-700 via-brand-800 to-brand-950 sticky top-24 rounded-3xl border border-slate-200 bg-gradient-to-br card-pad text-white shadow-xl">
                         <p class="text-accent-300 text-xs font-semibold uppercase tracking-wider">Schedule a chat</p>
                         <h3 class="font-display mt-2 text-2xl font-bold">15 minutes. Real numbers.</h3>
                         <p class="mt-3 text-sm text-white/80">Tell us a little about your business and we'll send back

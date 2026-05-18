@@ -43,7 +43,7 @@
 <header
     x-data="nav"
     :class="scrolled || open ? 'bg-brand-500/95 backdrop-blur-md shadow-lg' : '{{ $transparent ? 'bg-transparent' : 'bg-brand-500' }}'"
-    class="fixed inset-x-0 top-0 z-50 w-full transition-all duration-300"
+    class="fixed inset-x-0 top-0 z-50 w-full transition-colors duration-300"
 >
     <nav class="page-container flex items-center justify-between gap-6 py-3">
         <a href="{{ route('home') }}"

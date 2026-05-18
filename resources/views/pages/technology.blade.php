@@ -18,7 +18,7 @@
             <div class="grid gap-8 lg:grid-cols-2">
 
                 {{-- Front End --}}
-                <div class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-8 shadow-md transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-500/10">
+                <div class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 card-pad shadow-md transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-500/10">
                     <div class="absolute -top-16 -right-16 h-48 w-48 rounded-full bg-brand-200/40 blur-3xl"></div>
                     <div class="relative">
                         <div class="flex items-center gap-3">
@@ -26,7 +26,7 @@
                                 <span class="h-2 w-2 rounded-full bg-brand-500"></span> Front End
                             </span>
                         </div>
-                        <h3 class="mt-4 font-display text-3xl font-bold text-brand-900">BoldTrail</h3>
+                        <h3 class="mt-4 font-display text-2xl font-bold text-brand-900 sm:text-3xl">BoldTrail</h3>
                         <p class="mt-2 text-sm font-semibold uppercase tracking-wider text-accent-500">CRM &middot; Marketing &middot; Websites</p>
                         <p class="mt-4 text-slate-600">
                             Capture leads, nurture clients, market listings, and run your IDX site - all from one branded dashboard. AI-powered, mobile-first, and built for the way modern agents actually work.
@@ -59,7 +59,7 @@
                 </div>
 
                 {{-- Back Office --}}
-                <div class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 p-8 text-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl">
+                <div class="group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 card-pad text-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl">
                     <div class="absolute -top-16 -right-16 h-48 w-48 rounded-full bg-white/30 blur-3xl"></div>
                     <div class="relative">
                         <div class="flex items-center gap-3">
@@ -67,7 +67,7 @@
                                 <span class="h-2 w-2 rounded-full bg-accent-400"></span> Back Office
                             </span>
                         </div>
-                        <h3 class="mt-4 font-display text-3xl font-bold">BoldTrail Back Office</h3>
+                        <h3 class="mt-4 font-display text-2xl font-bold sm:text-3xl">BoldTrail Back Office</h3>
                         <p class="mt-2 text-sm font-semibold uppercase tracking-wider text-accent-300">Transactions &middot; Compliance &middot; Commissions</p>
                         <p class="mt-4 text-white/80">
                             Formerly Brokermint - now part of BoldTrail. Handles every transaction from contract to commission disbursement, with full e-sign, document compliance, and accounting built in.
@@ -116,7 +116,7 @@
                  x-transition:enter-end="opacity-100 scale-100"
                  class="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl bg-white shadow-2xl"
                  style="display:none">
-                <div class="relative overflow-hidden bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 p-8 text-white">
+                <div class="relative overflow-hidden bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 card-pad text-white">
                     <div class="absolute -top-20 -right-20 h-56 w-56 rounded-full bg-white/30 blur-3xl"></div>
                     <button @click="close"
                             class="absolute right-4 top-4 rounded-full bg-white/10 p-2 text-white hover:bg-white/20"
@@ -127,7 +127,7 @@
                         <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-300">
                             <span class="h-2 w-2 rounded-full bg-accent-400"></span> Front End Platform
                         </span>
-                        <h3 class="mt-4 font-display text-4xl font-bold">BoldTrail</h3>
+                        <h3 class="mt-4 font-display text-2xl font-bold sm:text-4xl">BoldTrail</h3>
                         <p class="mt-2 text-sm font-semibold uppercase tracking-wider text-accent-300">CRM &middot; Marketing &middot; Websites</p>
                         <p class="mt-5 max-w-xl text-white/90">
                             BoldTrail is the front-end command center for your business. Every lead, every conversation, every listing, every campaign - one branded dashboard, on web and mobile.
@@ -135,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="p-8">
+                <div class="p-5 sm:p-8">
                     <h4 class="font-display text-lg font-bold text-brand-900">What you get</h4>
                     <div class="mt-5 grid gap-5 sm:grid-cols-2">
                         @foreach ([
@@ -179,7 +179,7 @@
                  x-transition:enter-end="opacity-100 scale-100"
                  class="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl bg-white shadow-2xl"
                  style="display:none">
-                <div class="relative overflow-hidden bg-gradient-to-br from-accent-400 to-accent-500 p-8 text-brand-950">
+                <div class="relative overflow-hidden bg-gradient-to-br from-accent-400 to-accent-500 card-pad text-brand-950">
                     <div class="absolute -top-20 -right-20 h-56 w-56 rounded-full bg-white/30 blur-3xl"></div>
                     <button @click="close"
                             class="absolute right-4 top-4 rounded-full bg-brand-950/10 p-2 text-brand-950 hover:bg-brand-950/20"
@@ -190,7 +190,7 @@
                         <span class="inline-flex items-center gap-2 rounded-full bg-brand-950/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-900">
                             <span class="h-2 w-2 rounded-full bg-brand-700"></span> Back Office Platform
                         </span>
-                        <h3 class="mt-4 font-display text-4xl font-bold">BoldTrail Back Office</h3>
+                        <h3 class="mt-4 font-display text-2xl font-bold sm:text-4xl">BoldTrail Back Office</h3>
                         <p class="mt-2 text-sm font-semibold uppercase tracking-wider text-brand-900/70">Transactions &middot; Compliance &middot; Commissions</p>
                         <p class="mt-5 max-w-xl text-brand-900/80">
                             Formerly Brokermint, now unified with BoldTrail. The back office that runs every contract from ratified to disbursed - so you spend zero time chasing paperwork.
@@ -198,7 +198,7 @@
                     </div>
                 </div>
 
-                <div class="p-8">
+                <div class="p-5 sm:p-8">
                     <h4 class="font-display text-lg font-bold text-brand-900">What you get</h4>
                     <div class="mt-5 grid gap-5 sm:grid-cols-2">
                         @foreach ([
@@ -242,12 +242,12 @@
         <div class="absolute -top-32 -left-24 h-96 w-96 rounded-full bg-brand-400/30 blur-3xl motion-safe:animate-blob"></div>
         <div class="relative page-container-sm text-center">
             <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-300">Stack value</p>
-            <h2 class="mt-3 font-display text-3xl font-bold sm:text-5xl">If you bought this stack a la carte...</h2>
-            <p class="mt-6 font-display text-7xl font-bold text-accent-300 motion-safe:animate-float">$300+/mo</p>
+            <h2 class="heading-page-light mt-3">If you bought this stack a la carte...</h2>
+            <p class="mt-4 font-display text-4xl font-bold text-accent-300 motion-safe:animate-float sm:mt-6 sm:text-7xl">$300+/mo</p>
             <p class="mt-4 text-white/70">Front-end CRM, IDX site, lead-gen, marketing automation, branded app, plus back-office transaction management and accounting.</p>
-            <div class="mx-auto mt-10 max-w-md rounded-3xl border-2 border-accent-400 bg-white/5 p-8 backdrop-blur">
+            <div class="mx-auto mt-8 max-w-md rounded-3xl border-2 border-accent-400 bg-white/5 card-pad backdrop-blur sm:mt-10">
                 <p class="text-xs uppercase tracking-wider text-accent-300">At Taylor</p>
-                <p class="mt-1 font-display text-5xl font-bold text-white">$99/mo</p>
+                <p class="stat-hero mt-1 text-white">$99/mo</p>
                 <p class="mt-2 text-sm text-white/70">Everything included.</p>
             </div>
         </div>

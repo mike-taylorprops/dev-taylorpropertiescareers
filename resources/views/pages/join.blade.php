@@ -12,11 +12,11 @@
 
     <section class="bg-white section-y">
         <div class="page-container">
-            <div class="grid gap-12 lg:grid-cols-5">
+            <div class="grid gap-8 lg:grid-cols-5 sm:gap-12">
 
                 <aside class="lg:col-span-2">
                     <div class="sticky top-24 space-y-6">
-                        <div class="rounded-3xl border border-slate-200 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 p-8 text-white">
+                        <div class="rounded-3xl border border-slate-200 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950 card-pad text-white">
                             <p class="text-xs font-semibold uppercase tracking-wider text-accent-300">What happens next</p>
                             <ol class="mt-6 space-y-5">
                                 @foreach (['Submit the form', 'Quick 15-minute call', 'Get your custom plan', 'License transfer in days'] as $i => $step)
@@ -35,11 +35,11 @@
                     </div>
                 </aside>
 
-                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-xl lg:col-span-3">
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 card-pad shadow-xl lg:col-span-3">
                     @if ($program === 'referral')
                         <p class="inline-block rounded-full bg-accent-400/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-700">Referral Plan</p>
                     @endif
-                    <h2 class="mt-3 font-display text-3xl font-bold text-brand-900">Tell us about you.</h2>
+                    <h2 class="heading-page-sm mt-3">Tell us about you.</h2>
                     <p class="mt-2 text-sm text-slate-600">All fields confidential. We'll only contact you about joining Taylor.</p>
                     <div class="mt-8">
                         <x-nutshell-form form="16y4wq" />

@@ -12,7 +12,7 @@
 
     <x-section eyebrow="Three pillars" title="Built for every stage of your career.">
         <div class="grid gap-8 md:grid-cols-3">
-            <div class="rounded-3xl border border-slate-200 bg-white p-8 transition hover:shadow-2xl hover:shadow-brand-500/10">
+            <div class="rounded-3xl border border-slate-200 bg-white card-pad transition hover:shadow-2xl hover:shadow-brand-500/10">
                 <div class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-50 text-brand-600">
                     <x-icon name="users" class="h-7 w-7" />
                 </div>
@@ -25,7 +25,7 @@
                 </ul>
             </div>
 
-            <div class="rounded-3xl border-2 border-accent-400 bg-gradient-to-br from-brand-700 to-brand-950 p-8 text-white shadow-2xl">
+            <div class="rounded-3xl border-2 border-accent-400 bg-gradient-to-br from-brand-700 to-brand-950 card-pad text-white shadow-2xl">
                 <div class="grid h-14 w-14 place-items-center rounded-2xl bg-white/10 text-accent-300">
                     <x-icon name="academic" class="h-7 w-7" />
                 </div>
@@ -38,7 +38,7 @@
                 </ul>
             </div>
 
-            <div class="rounded-3xl border border-slate-200 bg-white p-8 transition hover:shadow-2xl hover:shadow-brand-500/10">
+            <div class="rounded-3xl border border-slate-200 bg-white card-pad transition hover:shadow-2xl hover:shadow-brand-500/10">
                 <div class="grid h-14 w-14 place-items-center rounded-2xl bg-brand-50 text-brand-600">
                     <x-icon name="building" class="h-7 w-7" />
                 </div>

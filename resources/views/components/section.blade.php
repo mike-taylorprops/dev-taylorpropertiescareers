@@ -22,7 +22,7 @@
         @if ($eyebrow || $title || $subtitle)
             <div class="{{ $alignClass }} max-w-3xl">
                 @if ($eyebrow)
-                    <p class="text-sm font-semibold uppercase tracking-[0.18em] {{ $tone === 'dark' || $tone === 'gradient' ? 'text-accent-300' : 'text-brand-500' }}">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] sm:text-sm {{ $tone === 'dark' || $tone === 'gradient' ? 'text-accent-300' : 'text-brand-500' }}">
                         {{ $eyebrow }}
                     </p>
                 @endif
@@ -32,14 +32,14 @@
                     </h2>
                 @endif
                 @if ($subtitle)
-                    <p class="mt-3 text-base leading-relaxed sm:mt-5 sm:text-lg {{ $tone === 'dark' || $tone === 'gradient' ? 'text-white/70' : 'text-slate-600' }}">
+                    <p class="mt-3 text-sm leading-relaxed sm:mt-5 sm:text-lg {{ $tone === 'dark' || $tone === 'gradient' ? 'text-white/70' : 'text-slate-600' }}">
                         {!! $subtitle !!}
                     </p>
                 @endif
             </div>
         @endif
 
-        <div class="@if($eyebrow || $title || $subtitle) mt-8 sm:mt-14 @endif">
+        <div class="@if($eyebrow || $title || $subtitle) mt-6 sm:mt-14 @endif">
             {{ $slot }}
         </div>
     </div>

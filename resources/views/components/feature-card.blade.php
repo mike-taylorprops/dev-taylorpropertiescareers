@@ -21,6 +21,6 @@
     <div class="grid h-12 w-12 place-items-center rounded-xl {{ $iconBg }} transition group-hover:scale-110">
         <x-icon :name="$icon" class="h-6 w-6" />
     </div>
-    <h3 class="font-display text-xl font-semibold {{ $titleColor }}">{{ $title }}</h3>
-    <div class="text-sm leading-relaxed {{ $bodyColor }}">{{ $slot }}</div>
+    <h3 class="font-display text-lg font-semibold sm:text-xl {{ $titleColor }}">{{ $title }}</h3>
+    <div class="text-xs leading-relaxed sm:text-sm {{ $bodyColor }}">{{ $slot }}</div>
 </div>

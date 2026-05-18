@@ -6,7 +6,7 @@
 @section('content')
 
     {{-- Hero --}}
-    <section class="relative isolate overflow-hidden bg-brand-500 pt-6 pb-16 text-white sm:pt-32 sm:pb-32 lg:pt-24 lg:pb-40">
+    <section class="hero-under-nav relative isolate overflow-hidden bg-brand-500 pt-6 pb-16 text-white sm:pt-32 sm:pb-32 lg:pt-24 lg:pb-40">
         <div class="absolute -top-32 -left-32 h-[34rem] w-[34rem] rounded-full bg-brand-500/40 blur-3xl motion-safe:animate-blob"></div>
         <div class="absolute top-60 -right-40 h-[24rem] w-[24rem] rounded-full bg-white/8 blur-3xl motion-safe:animate-blob-slow"></div>
         <div class="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-brand-400/30 blur-3xl motion-safe:animate-float"></div>

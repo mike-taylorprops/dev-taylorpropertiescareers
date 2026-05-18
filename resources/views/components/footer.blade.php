@@ -1,8 +1,8 @@
 <footer class="relative overflow-hidden bg-brand-950 text-white">
     <div class="absolute inset-0 bg-grid opacity-30"></div>
 
-    <div class="relative page-container py-10 sm:py-16">
-        <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+    <div class="relative page-container py-8 sm:py-16">
+        <div class="grid gap-8 md:grid-cols-2 sm:gap-12 lg:grid-cols-4">
             <div>
                 <img src="{{ asset('images/logo-white.png') }}" alt="Taylor Properties" class="h-12 w-auto">
                 <p class="mt-4 text-sm leading-relaxed text-white/70">

@@ -40,21 +40,21 @@
         <div class="page-container-sm">
             <div class="text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">Quick math</p>
-                <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-4xl">Refer 4 deals a year. Net thousands.</h2>
+                <h2 class="heading-page-sm mt-3">Refer 4 deals a year. Net thousands.</h2>
             </div>
 
             <div class="mt-12 grid gap-px overflow-hidden rounded-3xl bg-slate-200 sm:grid-cols-3">
-                <div class="bg-white p-8 text-center">
+                <div class="bg-white card-pad text-center">
                     <p class="text-xs uppercase tracking-wider text-slate-500">Annual fee</p>
-                    <p class="mt-2 font-display text-3xl font-bold text-brand-900">$99</p>
+                    <p class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">$99</p>
                 </div>
-                <div class="bg-white p-8 text-center">
+                <div class="bg-white card-pad text-center">
                     <p class="text-xs uppercase tracking-wider text-slate-500">4 referrals @ 25% of $12k</p>
-                    <p class="mt-2 font-display text-3xl font-bold text-brand-900">$12,000</p>
+                    <p class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">$12,000</p>
                 </div>
-                <div class="bg-gradient-to-br from-brand-700 to-brand-950 p-8 text-center text-white">
+                <div class="bg-gradient-to-br from-brand-700 to-brand-950 card-pad text-center text-white">
                     <p class="text-xs uppercase tracking-wider text-accent-300">Your take-home</p>
-                    <p class="mt-2 font-display text-3xl font-bold text-accent-300">$10,101</p>
+                    <p class="mt-2 font-display text-2xl font-bold text-accent-300 sm:text-3xl">$10,101</p>
                 </div>
             </div>
             <p class="mt-4 text-center text-xs text-slate-500">Assumes 4 referrals at $300k sale price, 2.5% commission, 25% referral fee, 85% to you.</p>

@@ -63,7 +63,7 @@
 
                     @if ($stat)
                         <div class="text-right">
-                            <div class="font-display text-3xl font-black leading-none tracking-tight sm:text-4xl {{ $v['stat'] }}">{{ $stat }}</div>
+                            <div class="font-display text-2xl font-black leading-none tracking-tight sm:text-4xl {{ $v['stat'] }}">{{ $stat }}</div>
                         </div>
                     @endif
                 </div>
