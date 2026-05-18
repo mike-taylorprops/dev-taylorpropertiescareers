@@ -17,8 +17,8 @@
     $alignClass = $align === 'center' ? 'text-center mx-auto' : 'text-left';
 @endphp
 
-<section {{ $attributes->merge(['class' => 'relative overflow-hidden py-20 sm:py-28 ' . ($tones[$tone] ?? $tones['light'])]) }}>
-    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<section {{ $attributes->merge(['class' => 'relative overflow-hidden section-y ' . ($tones[$tone] ?? $tones['light'])]) }}>
+    <div class="relative page-container">
         @if ($eyebrow || $title || $subtitle)
             <div class="{{ $alignClass }} max-w-3xl">
                 @if ($eyebrow)
@@ -27,19 +27,19 @@
                     </p>
                 @endif
                 @if ($title)
-                    <h2 class="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+                    <h2 class="heading-section mt-2 sm:mt-3">
                         {!! $title !!}
                     </h2>
                 @endif
                 @if ($subtitle)
-                    <p class="mt-5 text-lg leading-relaxed {{ $tone === 'dark' || $tone === 'gradient' ? 'text-white/70' : 'text-slate-600' }}">
+                    <p class="mt-3 text-base leading-relaxed sm:mt-5 sm:text-lg {{ $tone === 'dark' || $tone === 'gradient' ? 'text-white/70' : 'text-slate-600' }}">
                         {!! $subtitle !!}
                     </p>
                 @endif
             </div>
         @endif
 
-        <div class="@if($eyebrow || $title || $subtitle) mt-14 @endif">
+        <div class="@if($eyebrow || $title || $subtitle) mt-8 sm:mt-14 @endif">
             {{ $slot }}
         </div>
     </div>

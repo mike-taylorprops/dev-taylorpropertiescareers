@@ -13,7 +13,7 @@
     </x-page-hero>
 
     <section class="bg-white py-16 sm:py-24" x-data="tabs(0)">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="page-container">
 
             <div
                 class="flex flex-wrap justify-center gap-2 rounded-full border border-slate-200 bg-slate-50 p-2 sm:mx-auto sm:max-w-2xl">

@@ -25,8 +25,8 @@
     </x-page-hero>
 
     {{-- Taylor at a glance --}}
-    <section class="bg-white py-20 sm:py-28">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section class="bg-white section-y">
+        <div class="page-container">
             <div class="text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">What Taylor charges</p>
                 <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-5xl">No splits. No surprises. <span class="text-accent-500">One number.</span></h2>
@@ -65,8 +65,8 @@
 
     {{-- Optional comparison table - only renders if we have verified competitor data --}}
     @if ($competitors -> isNotEmpty())
-        <section class="bg-slate-50 py-20 sm:py-28">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section class="bg-slate-50 section-y">
+            <div class="page-container">
                 <div class="text-center">
                     <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">Verified comparisons</p>
                     <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-4xl">Side by side, sourced.</h2>
@@ -141,7 +141,7 @@
 
     {{-- Calculator: agent-driven, fully honest --}}
     <section id="calculator" class="bg-white pb-20 pt-4 sm:pb-28 sm:pt-8">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="page-container">
             <div class="mx-auto max-w-3xl text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">The honest comparison</p>
                 <h2 class="mt-3 font-display text-3xl font-bold tracking-tight text-brand-900 sm:text-5xl">Use your real numbers.</h2>

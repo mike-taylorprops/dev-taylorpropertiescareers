@@ -10,8 +10,8 @@
                  subtitle="Tell us a little about yourself. We'll send back exact numbers for your situation - no pressure, no commitment.">
     </x-page-hero>
 
-    <section class="bg-white py-20 sm:py-28">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section class="bg-white section-y">
+        <div class="page-container">
             <div class="grid gap-12 lg:grid-cols-5">
 
                 <aside class="lg:col-span-2">

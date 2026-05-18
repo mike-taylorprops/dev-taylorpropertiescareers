@@ -43,9 +43,9 @@
 <header
     x-data="nav"
     :class="scrolled || open ? 'bg-brand-500/95 backdrop-blur-md shadow-lg' : '{{ $transparent ? 'bg-transparent' : 'bg-brand-500' }}'"
-    class="fixed inset-x-0 top-0 z-40 transition-all duration-300"
+    class="fixed inset-x-0 top-0 z-50 w-full transition-all duration-300"
 >
-    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8">
+    <nav class="page-container flex items-center justify-between gap-6 py-3">
         <a href="{{ route('home') }}"
            class="flex items-center gap-3 transition-opacity duration-300"
            @if (request()->routeIs('home')) :class="scrolled || open ? 'opacity-100' : 'opacity-0 pointer-events-none'" @endif>
@@ -126,7 +126,7 @@
          x-transition:enter-end="opacity-100 translate-y-0"
          class="max-h-[80vh] overflow-y-auto border-t border-white/10 bg-brand-500/95 backdrop-blur-md lg:hidden"
          style="display:none">
-        <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6">
+        <div class="page-container py-4">
             <div class="space-y-1">
                 @foreach ($groups as $group)
                     @if (isset($group['route']))

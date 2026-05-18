@@ -11,10 +11,10 @@
     </x-page-hero>
 
     {{-- The two halves --}}
-    <section class="bg-white py-20 sm:py-28"
+    <section class="bg-white section-y"
              x-data="{ active: null, open(p) { this.active = p; document.body.style.overflow = 'hidden'; }, close() { this.active = null; document.body.style.overflow = ''; } }"
              @keydown.escape.window="close">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="page-container">
             <div class="grid gap-8 lg:grid-cols-2">
 
                 {{-- Front End --}}
@@ -237,10 +237,10 @@
     </section>
 
     {{-- Stack value --}}
-    <section class="relative overflow-hidden bg-gradient-to-br from-brand-900 via-brand-800 to-brand-950 py-20 text-white sm:py-28">
+    <section class="relative overflow-hidden bg-gradient-to-br from-brand-900 via-brand-800 to-brand-950 section-y text-white">
         <div class="absolute inset-0 bg-grid opacity-20"></div>
         <div class="absolute -top-32 -left-24 h-96 w-96 rounded-full bg-brand-400/30 blur-3xl motion-safe:animate-blob"></div>
-        <div class="relative mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+        <div class="relative page-container-sm text-center">
             <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-300">Stack value</p>
             <h2 class="mt-3 font-display text-3xl font-bold sm:text-5xl">If you bought this stack a la carte...</h2>
             <p class="mt-6 font-display text-7xl font-bold text-accent-300 motion-safe:animate-float">$300+/mo</p>

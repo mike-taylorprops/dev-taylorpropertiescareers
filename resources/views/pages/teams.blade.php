@@ -14,7 +14,7 @@
         </x-slot:actions>
     </x-page-hero>
 
-    <section class="bg-white py-20 sm:py-28">
+    <section class="bg-white section-y">
         <div class="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
             <div class="mx-auto grid h-20 w-20 place-items-center rounded-2xl bg-brand-50 text-brand-600">
                 <x-icon name="users" class="h-10 w-10" />

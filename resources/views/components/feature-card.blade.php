@@ -16,7 +16,7 @@
 <div
     x-data
     x-intersect.once="$el.classList.add('is-visible')"
-    {{ $attributes->merge(['class' => 'reveal group relative flex flex-col gap-4 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 ' . $cardBg]) }}
+    {{ $attributes->merge(['class' => 'reveal group relative flex flex-col gap-3 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 sm:gap-4 sm:p-6 ' . $cardBg]) }}
 >
     <div class="grid h-12 w-12 place-items-center rounded-xl {{ $iconBg }} transition group-hover:scale-110">
         <x-icon :name="$icon" class="h-6 w-6" />

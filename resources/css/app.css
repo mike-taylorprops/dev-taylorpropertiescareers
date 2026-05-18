@@ -111,6 +111,24 @@
     .mask-fade-x {
         mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     }
+    .page-container {
+        @apply mx-auto max-w-7xl px-1 sm:px-6 lg:px-8;
+    }
+    .page-container-sm {
+        @apply mx-auto max-w-5xl px-1 sm:px-6 lg:px-8;
+    }
+    .page-container-cta {
+        @apply mx-auto max-w-4xl px-1 text-center sm:px-6 lg:px-8;
+    }
+    .section-y {
+        @apply py-12 sm:py-20 lg:py-28;
+    }
+    .heading-section {
+        @apply font-display text-2xl font-bold tracking-tight sm:text-3xl lg:text-5xl;
+    }
+    .heading-display {
+        @apply font-display text-3xl font-bold tracking-tight sm:text-5xl lg:text-6xl;
+    }
 }
 
 html {

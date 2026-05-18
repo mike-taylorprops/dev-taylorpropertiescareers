@@ -36,8 +36,8 @@
         </div>
     </x-section>
 
-    <section class="bg-slate-50 py-20 sm:py-28">
-        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <section class="bg-slate-50 section-y">
+        <div class="page-container-sm">
             <div class="text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">Quick math</p>
                 <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-4xl">Refer 4 deals a year. Net thousands.</h2>

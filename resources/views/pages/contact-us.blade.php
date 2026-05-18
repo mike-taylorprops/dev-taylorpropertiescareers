@@ -10,8 +10,8 @@
                  subtitle="Call us, message us, or stop by. Mon-Fri, 9 to 5.">
     </x-page-hero>
 
-    <section class="bg-white py-20 sm:py-28">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section class="bg-white section-y">
+        <div class="page-container">
             <div class="grid gap-12 lg:grid-cols-2">
 
                 <div>

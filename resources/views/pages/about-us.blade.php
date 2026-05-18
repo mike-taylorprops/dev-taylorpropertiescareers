@@ -10,10 +10,10 @@
                  subtitle="Help real estate professionals keep more of what they earn - without sacrificing the support they need to grow.">
     </x-page-hero>
 
-    <section class="relative bg-white py-20 sm:py-28">
-        <div class="absolute right-0 top-1/2 -z-0 h-96 w-96 -translate-y-1/2 rounded-full bg-brand-50 blur-3xl"></div>
+    <section class="relative bg-white section-y">
+        <div class="pointer-events-none absolute right-0 top-1/2 z-0 h-96 w-96 -translate-y-1/2 rounded-full bg-brand-50 blur-3xl"></div>
 
-        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="relative page-container">
             <div class="grid items-center gap-12 lg:grid-cols-12">
 
                 <div class="lg:col-span-7">
@@ -67,8 +67,8 @@
     </section>
 
     {{-- Timeline --}}
-    <section class="relative bg-slate-50 py-20 sm:py-28">
-        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <section class="relative bg-slate-50 section-y">
+        <div class="page-container-sm">
             <div class="text-center">
                 <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-500">Milestones</p>
                 <h2 class="mt-3 font-display text-3xl font-bold text-brand-900 sm:text-5xl">From a one-office brokerage to 1,200 agents.</h2>

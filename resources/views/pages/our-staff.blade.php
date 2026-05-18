@@ -56,9 +56,9 @@
                 }
             },
         }"
-        class="bg-white py-20 sm:py-28"
+        class="bg-white section-y"
     >
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="page-container">
 
             @if ($employees->isEmpty())
                 <div class="mx-auto max-w-md rounded-3xl border border-slate-200 bg-slate-50 p-12 text-center">
