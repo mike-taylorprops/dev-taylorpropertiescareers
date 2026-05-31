@@ -18,6 +18,8 @@ Route::get('/contact-us', [PageController::class, 'contactUs'])->name('contact-u
 Route::get('/join', [PageController::class, 'join'])->name('join');
 Route::get('/join-form-submitted', [PageController::class, 'joinFormSubmitted'])->name('join-form-submitted');
 
+Route::post('/contact/submit', [PageController::class, 'submitContact'])->name('contact-submit');
+Route::post('/join/submit', [PageController::class, 'submitJoin'])->name('join-submit');
 Route::post('/email-employee', [EmployeeController::class, 'emailEmployee'])->name('email-employee');
 
 Route::get('/sitemap.xml', function () {
