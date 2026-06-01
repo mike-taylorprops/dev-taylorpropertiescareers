@@ -86,6 +86,9 @@
                             <p x-show="errors['message']" x-text="errors['message']?.[0]" class="mt-1 text-xs text-red-600" x-cloak></p>
                         </div>
                         <p x-show="errors['_']" x-text="errors['_']?.[0]" class="text-sm text-red-600" x-cloak></p>
+                        @if(config('app.turnstile_site_key'))
+                            <div class="cf-turnstile" data-sitekey="{{ config('app.turnstile_site_key') }}" data-theme="light"></div>
+                        @endif
                         <button type="submit" :disabled="sending"
                             class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-800 disabled:opacity-60">
                             <svg x-show="sending" class="h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24">

@@ -88,6 +88,10 @@ class PageController extends Controller
 
     public function submitContact(Request $request): JsonResponse
     {
+        if (! $this -> verifyTurnstile($request)) {
+            return response() -> json(['errors' => ['_' => ['Please complete the security check.']]], 422);
+        }
+
         $validated = $request -> validate([
             'first_name' => ['required', 'string', 'max:100'],
             'last_name'  => ['required', 'string', 'max:100'],
@@ -110,6 +114,10 @@ class PageController extends Controller
 
     public function submitJoin(Request $request): JsonResponse
     {
+        if (! $this -> verifyTurnstile($request)) {
+            return response() -> json(['errors' => ['_' => ['Please complete the security check.']]], 422);
+        }
+
         $validated = $request -> validate([
             'first_name'       => ['required', 'string', 'max:100'],
             'last_name'        => ['required', 'string', 'max:100'],
@@ -131,6 +139,28 @@ class PageController extends Controller
         return response() -> json(['ok' => true]);
     }
 
+    private function verifyTurnstile(Request $request): bool
+    {
+        $secret = config('app.turnstile_secret_key');
+        if (! $secret) {
+            return true;
+        }
+        $token = $request -> input('cf_turnstile_token');
+        if (! $token) {
+            return false;
+        }
+        try {
+            $response = Http::asForm() -> post('https://challenges.cloudflare.com/turnstile/v0/siteverify', [
+                'secret'   => $secret,
+                'response' => $token,
+                'remoteip' => $request -> ip(),
+            ]);
+            return $response -> json('success', false) === true;
+        } catch (\Throwable) {
+            return false;
+        }
+    }
+
     private function postToCrmWebhook(string $formId, array $data): void
     {
         $url    = config('crm.webhook_url');
@@ -141,7 +171,7 @@ class PageController extends Controller
         }
 
         try {
-            Http::timeout(5) -> withToken($secret) -> post($url, array_merge(['form_id' => $formId], $data));
+            Http::timeout(5) -> withToken($secret) -> post($url, array_merge(['form_id' => $formId, 'site_url' => config('app.url')], $data));
         } catch (\Throwable $e) {
             Log::error('CRM webhook failed', ['error' => $e -> getMessage(), 'url' => $url]);
         }

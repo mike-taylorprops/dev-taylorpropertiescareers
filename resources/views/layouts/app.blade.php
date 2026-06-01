@@ -47,6 +47,8 @@
         }
     </script>
 
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
     @stack('head')
 </head>
 <body class="nav-offset bg-white text-slate-800 antialiased">

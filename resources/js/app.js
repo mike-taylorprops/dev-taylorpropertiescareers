@@ -149,6 +149,9 @@ const crmPost = async (url, data) => {
     return res;
 };
 
+const cfToken = () => document.querySelector('[name="cf-turnstile-response"]')?.value || '';
+const cfReset = () => { if (window.turnstile) window.turnstile.reset(); };
+
 window.contactForm = function () {
     return {
         sending: false,
@@ -159,16 +162,19 @@ window.contactForm = function () {
             this.sending = true;
             this.errors = {};
             try {
-                const res = await crmPost('/contact/submit', this.form);
+                const res = await crmPost('/contact/submit', { ...this.form, cf_turnstile_token: cfToken() });
                 if (res.status === 422) {
                     this.errors = (await res.json()).errors || {};
+                    cfReset();
                 } else if (res.ok) {
                     this.success = true;
                 } else {
                     this.errors = { _: ['Something went wrong. Please try again.'] };
+                    cfReset();
                 }
             } catch {
                 this.errors = { _: ['Something went wrong. Please try again.'] };
+                cfReset();
             } finally {
                 this.sending = false;
             }
@@ -186,16 +192,19 @@ window.joinForm = function () {
             this.sending = true;
             this.errors = {};
             try {
-                const res = await crmPost('/join/submit', this.form);
+                const res = await crmPost('/join/submit', { ...this.form, cf_turnstile_token: cfToken() });
                 if (res.status === 422) {
                     this.errors = (await res.json()).errors || {};
+                    cfReset();
                 } else if (res.ok) {
                     this.success = true;
                 } else {
                     this.errors = { _: ['Something went wrong. Please try again.'] };
+                    cfReset();
                 }
             } catch {
                 this.errors = { _: ['Something went wrong. Please try again.'] };
+                cfReset();
             } finally {
                 this.sending = false;
             }
