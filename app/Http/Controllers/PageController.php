@@ -88,6 +88,10 @@ class PageController extends Controller
 
     public function submitContact(Request $request): JsonResponse
     {
+        if ($this -> honeypotTripped($request)) {
+            return response() -> json(['ok' => true]);
+        }
+
         if (! $this -> verifyTurnstile($request)) {
             return response() -> json(['errors' => ['_' => ['Please complete the security check.']]], 422);
         }
@@ -114,6 +118,10 @@ class PageController extends Controller
 
     public function submitJoin(Request $request): JsonResponse
     {
+        if ($this -> honeypotTripped($request)) {
+            return response() -> json(['ok' => true]);
+        }
+
         if (! $this -> verifyTurnstile($request)) {
             return response() -> json(['errors' => ['_' => ['Please complete the security check.']]], 422);
         }
@@ -137,6 +145,11 @@ class PageController extends Controller
         $this -> postToCrmWebhook('tpc_join', $validated);
 
         return response() -> json(['ok' => true]);
+    }
+
+    private function honeypotTripped(Request $request): bool
+    {
+        return filled($request -> input('website'));
     }
 
     private function verifyTurnstile(Request $request): bool

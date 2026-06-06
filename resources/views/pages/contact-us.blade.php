@@ -86,6 +86,7 @@
                             <p x-show="errors['message']" x-text="errors['message']?.[0]" class="mt-1 text-xs text-red-600" x-cloak></p>
                         </div>
                         <p x-show="errors['_']" x-text="errors['_']?.[0]" class="text-sm text-red-600" x-cloak></p>
+                        <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
                         @if(config('app.turnstile_site_key'))
                             <div class="cf-turnstile" data-sitekey="{{ config('app.turnstile_site_key') }}" data-theme="light"></div>
                         @endif
