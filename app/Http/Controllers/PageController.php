@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Employee;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
@@ -71,7 +72,26 @@ class PageController extends Controller
     {
         $program = $request->query('program');
 
-        return view('pages.join', compact('program'));
+        $lead_sources = $this -> recruitingLeadSources();
+
+        return view('pages.join', compact('program', 'lead_sources'));
+    }
+
+    private function recruitingLeadSources(): array
+    {
+        try {
+            return DB::connection('tpuserportal')
+                -> table('crm_lead_sources')
+                -> where('show_on_recruiting_site', 1)
+                -> orderBy('sort_order')
+                -> orderBy('name')
+                -> pluck('name')
+                -> all();
+        } catch (\Throwable $e) {
+            Log::error('Failed to load CRM lead sources', ['error' => $e -> getMessage()]);
+
+            return [];
+        }
     }
 
     public function joinFormSubmitted(Request $request)

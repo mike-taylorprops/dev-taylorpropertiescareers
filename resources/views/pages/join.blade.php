@@ -69,12 +69,9 @@
                             <select name="how_did_you_hear" x-model="form['how_did_you_hear']"
                                 class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100">
                                 <option value="">How did you hear about us?</option>
-                                <option value="Referral">Referral</option>
-                                <option value="Recruiting Email">Recruiting Email</option>
-                                <option value="Google Search">Google Search</option>
-                                <option value="Event">Event</option>
-                                <option value="Social Media">Social Media</option>
-                                <option value="Other">Other</option>
+                                @foreach ($lead_sources as $source)
+                                    <option value="{{ $source }}">{{ $source }}</option>
+                                @endforeach
                             </select>
                         </div>
                         <div>
