@@ -1,7 +1,8 @@
 // Marketing-email visitor tracking. When a visitor arrives from a tracked
-// email link (?mkt_e=...&mkt_b=...), store the attribution in a long-lived
-// first-party cookie and beacon every page view (landing, subsequent, and
-// return visits) to the backend, which forwards it to the portal.
+// email link (?mkt_id=...&mkt_b=... — the Mailchimp unique member id, never
+// an email address), store the attribution in a long-lived first-party
+// cookie and beacon every page view (landing, subsequent, and return
+// visits) to the backend, which forwards it to the portal.
 
 const COOKIE_NAME = 'mkt_attr';
 const COOKIE_DAYS = 90;
@@ -25,14 +26,14 @@ const writeCookie = (data) => {
 
 export const initVisitTracking = () => {
     const params = new URLSearchParams(location.search);
-    const email = params.get('mkt_e');
+    const mailchimpId = params.get('mkt_id');
     const batch = params.get('mkt_b');
 
     let attribution = readCookie();
 
-    if (email && batch) {
+    if (mailchimpId && batch) {
         attribution = {
-            e: email,
+            id: mailchimpId,
             b: batch,
             vid: attribution?.vid || crypto.randomUUID(),
             ts: Date.now(),
@@ -40,13 +41,13 @@ export const initVisitTracking = () => {
         writeCookie(attribution);
 
         // Strip the params so copied/shared URLs don't re-attribute.
-        params.delete('mkt_e');
+        params.delete('mkt_id');
         params.delete('mkt_b');
         const query = params.toString();
         history.replaceState(null, '', location.pathname + (query ? '?' + query : '') + location.hash);
     }
 
-    if (!attribution) {
+    if (!attribution || !attribution.id) {
         return;
     }
 
@@ -59,7 +60,7 @@ export const initVisitTracking = () => {
             'Accept': 'application/json',
         },
         body: JSON.stringify({
-            email: attribution.e,
+            mailchimp_unique_id: attribution.id,
             batch_id: attribution.b,
             visitor_id: attribution.vid,
             page_url: location.href,
