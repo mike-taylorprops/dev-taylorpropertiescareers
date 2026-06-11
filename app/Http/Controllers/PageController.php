@@ -167,6 +167,36 @@ class PageController extends Controller
         return response() -> json(['ok' => true]);
     }
 
+    public function submitCommission(Request $request): JsonResponse
+    {
+        if ($this -> honeypotTripped($request)) {
+            return response() -> json(['ok' => true]);
+        }
+
+        if (! $this -> verifyTurnstile($request)) {
+            return response() -> json(['errors' => ['_' => ['Please complete the security check.']]], 422);
+        }
+
+        $validated = $request -> validate([
+            'first_name' => ['required', 'string', 'max:100'],
+            'last_name'  => ['required', 'string', 'max:100'],
+            'email'      => ['required', 'email', 'max:191'],
+            'phone'      => ['required', 'string', 'max:30'],
+            'message'    => ['required', 'string', 'max:5000'],
+        ], [
+            'first_name.required' => 'First name is required.',
+            'last_name.required'  => 'Last name is required.',
+            'email.required'      => 'Email is required.',
+            'email.email'         => 'Please enter a valid email address.',
+            'phone.required'      => 'Phone number is required.',
+            'message.required'    => 'Message is required.',
+        ]);
+
+        $this -> postToCrmWebhook('tpc_commission', $validated);
+
+        return response() -> json(['ok' => true]);
+    }
+
     private function honeypotTripped(Request $request): bool
     {
         return filled($request -> input('website'));

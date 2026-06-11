@@ -4,6 +4,9 @@ import collapse from '@alpinejs/collapse';
 import focus from '@alpinejs/focus';
 import { CountUp } from 'countup.js';
 import Splide from '@splidejs/splide';
+import { initVisitTracking } from './visit-tracking';
+
+initVisitTracking();
 
 import { calculator } from './calculator.js';
 
@@ -163,6 +166,36 @@ window.contactForm = function () {
             this.errors = {};
             try {
                 const res = await crmPost('/contact/submit', { ...this.form, cf_turnstile_token: cfToken() });
+                if (res.status === 422) {
+                    this.errors = (await res.json()).errors || {};
+                    cfReset();
+                } else if (res.ok) {
+                    this.success = true;
+                } else {
+                    this.errors = { _: ['Something went wrong. Please try again.'] };
+                    cfReset();
+                }
+            } catch {
+                this.errors = { _: ['Something went wrong. Please try again.'] };
+                cfReset();
+            } finally {
+                this.sending = false;
+            }
+        },
+    };
+};
+
+window.commissionForm = function () {
+    return {
+        sending: false,
+        form: { first_name: '', last_name: '', email: '', phone: '', message: '' },
+        errors: {},
+        success: false,
+        async submit() {
+            this.sending = true;
+            this.errors = {};
+            try {
+                const res = await crmPost('/commission/submit', { ...this.form, cf_turnstile_token: cfToken() });
                 if (res.status === 422) {
                     this.errors = (await res.json()).errors || {};
                     cfReset();

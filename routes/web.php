@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\VisitTrackingController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -20,7 +21,11 @@ Route::get('/join-form-submitted', [PageController::class, 'joinFormSubmitted'])
 
 Route::post('/contact/submit', [PageController::class, 'submitContact'])->name('contact-submit');
 Route::post('/join/submit', [PageController::class, 'submitJoin'])->name('join-submit');
+Route::post('/commission/submit', [PageController::class, 'submitCommission'])->name('commission-submit');
 Route::post('/email-employee', [EmployeeController::class, 'emailEmployee'])->name('email-employee');
+
+// Marketing-email visitor tracking beacon
+Route::post('/track-visit', [VisitTrackingController::class, 'store'])->middleware('throttle:120,1')->name('track-visit');
 
 Route::get('/sitemap.xml', function () {
     $routes = ['home', 'why-taylor', 'commission-plans', 'compare', 'referral-company', 'mentoring', 'technology', 'about-us', 'our-staff', 'teams', 'contact-us', 'join'];

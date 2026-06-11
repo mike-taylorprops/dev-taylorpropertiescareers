@@ -106,8 +106,52 @@
                     <span x-show="!show_custom_header">Commission Details</span> Request
                 </h3>
                 <p class="mt-2 text-sm text-slate-600">Fill out the form and we'll send the full plan details to your inbox.</p>
-                <div class="mt-6">
-                    <x-nutshell-form form="m4IxTo" />
+                <div class="mt-6" x-data="commissionForm()">
+                    <form x-show="!success" @submit.prevent="submit" class="space-y-4">
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div>
+                                <input type="text" name="first_name" x-model="form['first_name']" required placeholder="First name" autocomplete="given-name"
+                                    class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100" />
+                                <p x-show="errors['first_name']" x-text="errors['first_name']?.[0]" class="mt-1 text-sm text-red-600" x-cloak></p>
+                            </div>
+                            <div>
+                                <input type="text" name="last_name" x-model="form['last_name']" required placeholder="Last name" autocomplete="family-name"
+                                    class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100" />
+                                <p x-show="errors['last_name']" x-text="errors['last_name']?.[0]" class="mt-1 text-sm text-red-600" x-cloak></p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="email" name="email" x-model="form['email']" required placeholder="Email address" autocomplete="email"
+                                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100" />
+                            <p x-show="errors['email']" x-text="errors['email']?.[0]" class="mt-1 text-sm text-red-600" x-cloak></p>
+                        </div>
+                        <div>
+                            <input type="tel" name="phone" x-model="form['phone']" required placeholder="Phone number" autocomplete="tel"
+                                class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100" />
+                            <p x-show="errors['phone']" x-text="errors['phone']?.[0]" class="mt-1 text-sm text-red-600" x-cloak></p>
+                        </div>
+                        <div>
+                            <textarea name="message" x-model="form['message']" required rows="4" placeholder="Tell us about the commission plan you're interested in"
+                                class="w-full resize-none rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"></textarea>
+                            <p x-show="errors['message']" x-text="errors['message']?.[0]" class="mt-1 text-sm text-red-600" x-cloak></p>
+                        </div>
+                        <p x-show="errors['_']" x-text="errors['_']?.[0]" class="text-sm text-red-600" x-cloak></p>
+                        <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+                        @if(config('app.turnstile_site_key'))
+                            <div class="cf-turnstile" data-sitekey="{{ config('app.turnstile_site_key') }}" data-theme="light"></div>
+                        @endif
+                        <button type="submit" :disabled="sending"
+                            class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-800 disabled:opacity-60">
+                            <span x-text="sending ? 'Sending…' : 'Send Request'"></span>
+                        </button>
+                    </form>
+                    <div x-show="success" class="py-8 text-center" x-cloak>
+                        <div class="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-emerald-100 text-emerald-600">
+                            <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                        </div>
+                        <h4 class="font-display text-xl font-bold text-brand-900">Request sent!</h4>
+                        <p class="mt-2 text-sm text-slate-600">We'll send the plan details to your inbox shortly.</p>
+                    </div>
                 </div>
             </div>
         </div>
