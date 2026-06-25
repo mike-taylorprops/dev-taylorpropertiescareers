@@ -1,7 +1,7 @@
 @extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Teams | Taylor Properties')
-@section('description', 'Build or bring your real estate team to Taylor Properties. Keep your brand, set custom team economics, and let us run the back office - every seat stays 100% commission at $99 a month.')
+@section('description', 'Build or bring your real estate team to Taylor Properties. Keep your brand, set custom team economics, and let us run the back office. Every seat stays at $99 a month and you personalize the commission splits from within your team. Never any agent transaction fees.')
 
 @section('content')
 
