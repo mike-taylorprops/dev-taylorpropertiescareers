@@ -149,9 +149,9 @@
             <x-flip-card variant="gold"
                          icon="shield"
                          stat="100%"
-                         title="Commission"
+                         title="100% Commission"
                          teaser="Every dollar you negotiate, you keep - from your first deal to your last.">
-                No splits to chase. No caps to hit. No anniversary resets. Whether it's your first $5k commission or your fiftieth $50k commission, you keep the whole thing.
+                Whether it's your first $5k commission or your fiftieth $50k commission, you keep the whole thing.
             </x-flip-card>
 
             <x-flip-card variant="dark"
