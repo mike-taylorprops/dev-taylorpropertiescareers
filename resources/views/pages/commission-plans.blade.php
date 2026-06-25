@@ -42,7 +42,7 @@
                     </button>
                 </div>
 
-                <div class="rounded-3xl border border-slate-200 bg-white card-pad shadow-sm transition hover:shadow-xl">
+                <div class="rounded-3xl border border-slate-200 bg-white card-pad shadow-sm transition hover:shadow-xl flex flex-col">
                     <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Teams</p>
                     <h3 class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">Team Plans</h3>
                     <p class="mt-2 text-sm text-slate-600">Have a team? High volume? Let's design a plan around your business.</p>
@@ -57,15 +57,17 @@
                             </li>
                         @endforeach
                     </ul>
+                    <div class="flex flex-1 items-end">
                     <button @click="show_commission_request_form = true; show_custom_header = true"
                             class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-800">
-                        Design My Plan
+                        Discuss Team Options
                     </button>
+                    </div>
                 </div>
 
                 <div class="rounded-3xl border border-slate-200 bg-white card-pad shadow-sm transition hover:shadow-xl">
                     <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Referral</p>
-                    <h3 class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">Referral Plan</h3>
+                    <h3 class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">Referral Only Plan</h3>
                     <p class="mt-2 text-sm text-slate-600">For licensees who want to refer business without active production.</p>
                     <p class="mt-6">
                         <span class="stat-hero text-brand-700">$99</span>
