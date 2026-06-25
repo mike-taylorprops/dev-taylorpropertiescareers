@@ -69,7 +69,7 @@
                 <p class="mt-5 text-sm leading-relaxed text-slate-600">Switching brokerages shouldn't mean rebuilding your
                     team. We support your current setup providing a smooth transition for every agent.</p>
                 <ul class="mt-6 space-y-3">
-                    @foreach (['Keep your team brand, name, and identity', 'Custom economics matched to how you operate today', 'Smooth license transfer and onboarding for your agents', 'Customize the commission splits within your team', 'No franchise fees, no royalties, no transaction fees'] as $item)
+                    @foreach (['Keep your team brand, name, and identity', 'Custom economics matched to how you operate today', 'Smooth license transfer and onboarding for your agents', 'Customize the commission splits within your team', 'No franchise fees, no royalties, no agent transaction fees'] as $item)
                         <li class="flex items-start gap-3 text-sm text-slate-700">
                             <span
                                 class="bg-brand-50 text-brand-600 mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full">
