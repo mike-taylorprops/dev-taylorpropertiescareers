@@ -169,7 +169,7 @@
     {{-- Why agents switch --}}
     <x-section eyebrow="Why agents switch" title="Three reasons it adds up."
         subtitle="The math is straightforward. The support is the part you have to feel.">
-        <div class="grid gap-4 md:grid-cols-4 md:gap-6">
+        <div class="grid gap-4 md:grid-cols-3 md:gap-6">
             <x-flip-card variant="light" icon="dollar" stat="$99/mo" title="Lowest Fixed Cost"
                 teaser="No franchise fees. No royalty fees. No per-transaction agent fees. No desk fees.">
                 $99 a month covers everything. The bill is the bill - same number, every month. Most brokerages charge that

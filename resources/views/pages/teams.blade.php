@@ -197,8 +197,7 @@
             <x-faq question="Can I keep my team's brand and name?">Absolutely. You lead under your own team brand and
                 identity inside the brokerage - your name stays front and center.</x-faq>
             <x-faq question="Who handles the paperwork and commission splits?">BoldTrail Back Office handles 
-                compliance and automatic commission splits and disbursements - so you're not doing math or chasing
-                signatures on every deal.</x-faq>
+                compliance and automatic commission splits and disbursements.</x-faq>
             <x-faq question="Can I start a brand-new team from scratch?">Yes. Whether you're spinning up your first team or
                 scaling an established one, we'll help with the brand setup, back office, lead routing, and recruiting
                 support to get it off the ground.</x-faq>
