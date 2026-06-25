@@ -50,7 +50,7 @@
                             <div class="flex h-full flex-col rounded-3xl border border-slate-200 bg-gradient-to-br from-accent-400 to-accent-500 p-6 text-brand-950 shadow-md">
                                 <p class="text-xs font-bold uppercase tracking-wider text-brand-900/80">Model</p>
                                 <p class="mt-2 font-display text-3xl font-bold sm:text-4xl">100%</p>
-                                <p class="mt-auto pt-2 text-xs text-brand-900/80">Commission, forever</p>
+                                <p class="mt-auto pt-2 text-xs text-brand-900/80">Commission</p>
                             </div>
                             <div class="mt-8 flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-4 shadow-md sm:p-6">
                                 <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">Owned by</p>

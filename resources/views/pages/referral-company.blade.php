@@ -25,7 +25,7 @@
                 Hold your license active, stay current, and keep your earning power.
             </x-feature-card>
             <x-feature-card icon="x" title="No MLS fees">
-                No MLS dues, no association fees, no monthly platform charges - because you're not actively listing.
+                No MLS dues, no association fees, no monthly platform charges - because you're not actively listing or selling.
             </x-feature-card>
             <x-feature-card icon="globe" title="Refer to any agent, anywhere">
                 Send your client to any agent in the country - whoever's the best fit for their market. Bonus: 1,000+ Taylor agents already in MD, DC, VA, DE, and PA when you want to keep it in-house.

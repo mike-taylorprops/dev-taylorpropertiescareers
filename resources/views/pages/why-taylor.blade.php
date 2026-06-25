@@ -45,7 +45,7 @@
                                 $99/month is the entire bill. No platform fee on top. No tech fee. No surprise charges.
                             </x-flip-card>
                             <x-flip-card icon="shield" title="100% Commission Split" stat="100%"
-                                teaser="Forever. From your first deal." variant="light">
+                                teaser="From your first deal." variant="light">
                                 Keep 100% from day one. 
                             </x-flip-card>
                             <x-flip-card icon="check" title="Agent Transaction Fees" stat="$0"
@@ -115,7 +115,7 @@
                             for you</p>
                         <h2 class="heading-page-sm text-brand-900 mt-2">All the tools, included.
                         </h2>
-                        <p class="mt-4 text-slate-600">Everything you'd otherwise pay $300+/month for, included in your $99.
+                        <p class="mt-4 text-slate-600">Everything you'd otherwise pay $500+/month for, included in your $99.
                         </p>
 
                         <div class="mt-8 grid gap-4 sm:grid-cols-2">

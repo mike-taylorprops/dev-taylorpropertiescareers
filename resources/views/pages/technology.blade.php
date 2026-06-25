@@ -165,7 +165,7 @@
                     <div class="mt-8 rounded-2xl bg-brand-50 p-6">
                         <p class="text-xs font-semibold uppercase tracking-wider text-brand-700">Bottom line</p>
                         <p class="mt-2 text-sm text-slate-700">
-                            If you tried to buy this stack a la carte - CRM, IDX site, lead gen, marketing automation, branded app - you'd pay <span class="font-bold text-brand-900">$300+/month</span>. At Taylor it's included in your $99.
+                            If you tried to buy this stack a la carte - CRM, IDX site, lead gen, marketing automation, branded app - you'd pay <span class="font-bold text-brand-900">$500+/month</span>. At Taylor it's included in your $99.
                         </p>
                     </div>
                 </div>

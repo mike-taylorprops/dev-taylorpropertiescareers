@@ -51,7 +51,7 @@
                 <div class="rounded-3xl border border-slate-200 bg-white card-pad text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl">
                     <p class="text-xs font-semibold uppercase tracking-wider text-brand-500">Commission Split</p>
                     <p class="mt-3 stat-hero text-brand-900">100%</p>
-                    <p class="mt-2 text-sm text-slate-600">Forever. From your first deal.</p>
+                    <p class="mt-2 text-sm text-slate-600">From your first deal.</p>
                 </div>
             </div>
 
