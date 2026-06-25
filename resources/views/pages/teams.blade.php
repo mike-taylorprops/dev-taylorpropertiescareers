@@ -132,10 +132,9 @@
                 Lean on the brokerage for onboarding and recruiting support, so adding the next agent to your team is fast
                 and painless.
             </x-flip-card>
-            <x-flip-card icon="academic" title="Training Pipeline" stat="Weekly" teaser="Live training, CE & masterminds."
+            <x-flip-card icon="academic" title="Training Pipeline" stat="monthly" teaser="Live training, masterminds & discounted CD."
                 variant="dark">
-                Plug your team into monthly live classes, masterminds, and CE through Metropolitan Real Estate Academy and
-                The CE Shop - included.
+                Plug your team into monthly live classes, masterminds, and discounted CE through The CE Shop
             </x-flip-card>
         </div>
     </x-section>
