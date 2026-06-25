@@ -7,7 +7,7 @@
 
     <x-page-hero eyebrow="For team leaders"
                  title="Build your team on <span class='text-gradient'>your terms.</span>"
-                 subtitle="Bring your team to Maryland's largest independent brokerage. Keep your brand, set your own economics, and let us run the back office - while every seat stays 100% commission at $99 a month.">
+                 subtitle="Bring your team to one of the largest independent brokerages on the east coast. Keep your brand, set your own economics, and customize the commission splits from within your team. Let us run the back office at only $99 a month per agent.">
         <x-slot:actions>
             <x-button :href="route('contact-us')" variant="primary" size="lg">Talk Team Economics</x-button>
             <x-button :href="route('commission-plans')" variant="ghost" size="lg">See the Plans</x-button>
@@ -114,7 +114,7 @@
             </x-flip-card>
             <x-flip-card icon="sparkle" title="Your Team Brand" stat="Yours"
                          teaser="Your name, front and center." variant="light">
-                Build under your own team brand and identity. You're a team inside Maryland's largest independent brokerage - not a number on a franchise dashboard.
+                Build under your own team brand and identity. You're a team inside one of the largest independent brokerages on the east coast - not a number on a franchise dashboard.
             </x-flip-card>
             <x-flip-card icon="cog" title="Automated Back Office" stat="Auto" variant="dark"
                          teaser="Splits & disbursements, handled.">

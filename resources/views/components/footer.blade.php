@@ -6,7 +6,7 @@
             <div>
                 <img src="{{ asset('images/logo-white.png') }}" alt="Taylor Properties" class="h-12 w-auto">
                 <p class="mt-4 text-sm leading-relaxed text-white/70">
-                    Maryland's largest independent brokerage. Family-owned since 1985, built on giving real estate professionals more of what they earn.
+                    One of the largest independent brokerages on the east coast. Family-owned since 1985, built on giving real estate professionals more of what they earn.
                 </p>
                 <div class="mt-6 flex items-center gap-3">
                     <a href="https://www.facebook.com/taylorproperties.net" target="_blank" rel="noopener" aria-label="Facebook" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition hover:bg-accent-400 hover:text-brand-900">

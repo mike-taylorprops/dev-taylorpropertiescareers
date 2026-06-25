@@ -2,7 +2,7 @@
 
 @section('title', 'Taylor Properties | Keep 100% of Your Commission')
 @section('description',
-    'Maryland\'s largest independent brokerage. 100% commission, $99 a month, zero agent transaction
+    'One of the largest independent brokerages on the east coast. 100% commission, $99 a month, zero agent transaction
     fees. Keep more of what you earn.')
 
 @section('content')
@@ -72,7 +72,7 @@
                         <p
                             class="text-accent-300 flex items-center justify-center gap-2 text-center text-[11px] font-bold uppercase tracking-[0.2em] lg:justify-start lg:text-left lg:text-xs">
                             <span class="bg-accent-400 h-1 w-6 rounded-full"></span>
-                            Maryland's Largest Independent Brokerage
+                            One of the Largest Independent Brokerages on the East Coast
                             <span class="bg-accent-400 h-1 w-6 rounded-full lg:hidden"></span>
                         </p>
                         <h1

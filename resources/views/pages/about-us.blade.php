@@ -1,7 +1,7 @@
 @extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'About Taylor Properties')
-@section('description', 'Family-owned since 1985. Maryland\'s largest independent brokerage. The story of how Taylor Properties got here.')
+@section('description', 'Family-owned since 1985. One of the largest independent brokerages on the east coast. The story of how Taylor Properties got here.')
 
 @section('content')
 
@@ -28,7 +28,7 @@
                             In an industry where franchise fees, agent transaction fees, and split structures eat up half an agent's commission, we built something different. We pioneered the 100% commission model in Maryland - and never looked back.
                         </p>
                         <p>
-                            Today, we're the <strong class="text-brand-900">largest independent brokerage in Maryland</strong>. Still family-owned. Still independently operated. Still focused on the same mission.
+                            Today, we're one of the <strong class="text-brand-900">largest independent brokerage on the east coast</strong>. Still family-owned. Still independently operated. Still focused on the same mission.
                         </p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                     ['2005', 'Multi-State Expansion', 'Licensing expands to DC and VA - same model, more reach.'],
                     ['2010', 'Tech Stack Built', 'Custom CRM, IDX, and marketing tools - all included for agents.'],
                     ['2020', '1,000+ Agents', 'Crossed the thousand-agent mark while staying family-owned. Expanded to DE and PA.'],
-                    ['Today', 'Largest Independent in MD', '1,200+ agents in 5 states. $99/month. Zero agent transaction fees.'],
+                    ['Today', 'One of the Largest Independent on the East Coast', '1,200+ agents in 5 states. $99/month. Zero agent transaction fees.'],
                 ] as $i => $event)
                     <div x-data x-intersect.once="$el.classList.remove('opacity-0')"
                          class="relative mb-12 flex items-start gap-6 opacity-0 transition-opacity duration-700 sm:gap-12 {{ $i % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse' }}">
