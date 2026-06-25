@@ -181,10 +181,10 @@
                 Whether it's your first $5k commission or your fiftieth $50k commission, you keep the whole thing.
             </x-flip-card>
 
-            <x-flip-card variant="dark" icon="users" stat="1:1" title="Training & Support"
-                teaser="Strategic training and support to help you grow your business.">
+            {{-- <x-flip-card variant="dark" icon="users" stat="1:1" title="Training & Support"
+                teaser="Strategic training and support to help you grow your business and attract more clients.">
                 Monthly live training, masterminds and CE guidance for whatever stage you're in.
-            </x-flip-card>
+            </x-flip-card> --}}
 
             <x-flip-card variant="dark" icon="users" stat="1:1" title="Real Mentorship"
                 teaser="A person who picks up the phone. Not a chatbot, not a help-desk ticket.">

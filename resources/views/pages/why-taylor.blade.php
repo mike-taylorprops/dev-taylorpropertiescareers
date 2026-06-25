@@ -49,7 +49,7 @@
                                 Keep 100% from day one. No anniversary resets. No caps to hit. No splits to negotiate.
                             </x-flip-card>
                             <x-flip-card icon="check" title="Agent Transaction Fees" stat="$0"
-                                teaser="No per-deal cut. Ever." variant="dark">
+                                teaser="No per-deal cut." variant="dark">
                                 Many brokerages charge a per-closing transaction fee on top of your split. We don't - your
                                 $99/month is the entire bill.
                             </x-flip-card>
