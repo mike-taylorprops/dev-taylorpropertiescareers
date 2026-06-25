@@ -6,8 +6,8 @@
 @section('content')
 
     <x-page-hero eyebrow="The team behind the brokerage"
-                 title="People who <span class='text-gradient'>actually answer.</span>"
-                 subtitle="The folks who keep Taylor running, from contract review to marketing to the moment you transfer in.">
+                 title="People who <span class='text-gradient'>are actually there for you.</span>"
+                 subtitle="The folks who keep Taylor running, from contract review to marketing from the moment you transfer in.">
     </x-page-hero>
 
     <section
@@ -60,7 +60,7 @@
     >
         <div class="page-container">
 
-            @if ($employees->isEmpty())
+            @if ($employees -> isEmpty())
                 <div class="mx-auto max-w-md rounded-3xl border border-slate-200 bg-slate-50 p-12 text-center">
                     <p class="text-slate-600">Staff directory is being updated. Please check back shortly.</p>
                 </div>
@@ -68,23 +68,23 @@
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     @foreach ($employees as $employee)
                         @php
-                            $photoUrl = $employee->photo_location_url ?: asset('images/staff-placeholder.svg');
-                            $name = $employee->fullname ?? trim(($employee->first_name ?? '') . ' ' . ($employee->last_name ?? ''));
+                            $photoUrl = $employee -> photo_location_url ?: asset('images/staff-placeholder.svg');
+                            $name = $employee -> fullname ?? trim(($employee -> first_name ?? '') . ' ' . ($employee -> last_name ?? ''));
                         @endphp
                         <div class="group flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-brand-500/10">
                             <div class="relative aspect-[4/5] overflow-hidden bg-slate-100">
                                 <img src="{{ $photoUrl }}" alt="{{ $name }}" class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105">
-                                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-brand-950/80 to-transparent"></div>
+                                {{-- <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-brand-950/80 to-transparent"></div> --}}
                             </div>
                             <div class="flex flex-1 flex-col p-6">
                                 <h3 class="font-display text-lg font-bold text-brand-900">{{ $name }}</h3>
-                                <p class="mt-1 text-sm font-semibold text-accent-500">{{ $employee->job_title }}</p>
+                                <p class="mt-1 text-sm font-semibold text-accent-500">{{ $employee -> job_title }}</p>
                                 <div class="mt-auto pt-4">
                                     <button
-                                        @click="open('{{ addslashes($name) }}', '{{ addslashes($employee->first_name ?? '') }}', '{{ addslashes($employee->email ?? '') }}')"
+                                        @click="open('{{ addslashes($name) }}', '{{ addslashes($employee -> first_name ?? '') }}', '{{ addslashes($employee -> email ?? '') }}')"
                                         class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-800">
                                         <x-icon name="mail" class="h-4 w-4" />
-                                        Contact {{ $employee->first_name ?? 'Us' }}
+                                        Contact {{ $employee -> first_name ?? 'Us' }}
                                     </button>
                                 </div>
                             </div>
