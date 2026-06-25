@@ -43,14 +43,14 @@
                 </div>
 
                 <div class="rounded-3xl border border-slate-200 bg-white card-pad shadow-sm transition hover:shadow-xl">
-                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Custom</p>
-                    <h3 class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">Build Your Own</h3>
-                    <p class="mt-2 text-sm text-slate-600">Have a team? High volume? Specialty market? Let's design a plan around your business.</p>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Teams</p>
+                    <h3 class="mt-2 font-display text-2xl font-bold text-brand-900 sm:text-3xl">Team Plans</h3>
+                    <p class="mt-2 text-sm text-slate-600">Have a team? High volume? Let's design a plan around your business.</p>
                     <p class="mt-6">
                         <span class="stat-hero text-brand-700">Talk to us</span>
                     </p>
                     <ul class="mt-6 space-y-3 text-sm text-slate-700">
-                        @foreach (['Custom split or flat-fee structure', 'Team-friendly pricing', 'Specialty (commercial, rental) terms', 'Volume incentives', 'Dedicated broker support', 'Everything in Standard, plus more'] as $f)
+                        @foreach (['Custom split or flat-fee structure', 'Team-friendly pricing', 'Specialty (commercial, rental) terms',  'Dedicated broker support'] as $f)
                             <li class="flex items-start gap-2">
                                 <x-icon name="check" class="h-5 w-5 shrink-0 text-accent-500" />
                                 <span>{{ $f }}</span>

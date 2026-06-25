@@ -44,9 +44,9 @@
                                 teaser="All-in. No platform fee. No tech fee." variant="gold">
                                 $99/month is the entire bill. No platform fee on top. No tech fee. No surprise charges.
                             </x-flip-card>
-                            <x-flip-card icon="shield" title="Commission Split" stat="100%"
+                            <x-flip-card icon="shield" title="100% Commission Split" stat="100%"
                                 teaser="Forever. From your first deal." variant="light">
-                                Keep 100% from day one. No anniversary resets. No caps to hit. No splits to negotiate.
+                                Keep 100% from day one. 
                             </x-flip-card>
                             <x-flip-card icon="check" title="Agent Transaction Fees" stat="$0"
                                 teaser="No per-deal cut." variant="dark">
