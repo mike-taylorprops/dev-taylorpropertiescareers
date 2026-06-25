@@ -194,13 +194,10 @@
             <x-faq question="How do team splits work?">We set up custom team economics through the Custom plan - splits,
                 caps, and member arrangements built around your structure. Tell us how your team is organized and we'll
                 design it to fit.</x-faq>
-            <x-faq question="Do my agents still keep 100% commission and the $99 plan?">Every agent on your team stays on
-                our 100% commission, $99/month model with zero agent transaction fees. Team arrangements are layered on top
-                through the Custom plan.</x-faq>
             <x-faq question="Can I keep my team's brand and name?">Absolutely. You lead under your own team brand and
                 identity inside the brokerage - your name stays front and center.</x-faq>
-            <x-faq question="Who handles the paperwork and commission splits?">BoldTrail Back Office handles e-sign,
-                compliance, and automatic commission splits and disbursements - so you're not doing math or chasing
+            <x-faq question="Who handles the paperwork and commission splits?">BoldTrail Back Office handles 
+                compliance and automatic commission splits and disbursements - so you're not doing math or chasing
                 signatures on every deal.</x-faq>
             <x-faq question="Can I start a brand-new team from scratch?">Yes. Whether you're spinning up your first team or
                 scaling an established one, we'll help with the brand setup, back office, lead routing, and recruiting
