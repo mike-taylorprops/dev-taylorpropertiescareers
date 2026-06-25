@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <p class="mt-5 text-sm leading-relaxed text-white/80">You're a producer ready to grow a roster. We help you
-                    stand up the brand, the tools, and the economics - then back you while you recruit.</p>
+                    build up the brand, provide the with the tools and back you while you recruit.</p>
                 <ul class="mt-6 space-y-3">
                     @foreach (['Custom team splits & caps through the Custom plan', 'Your team name and brand - front and center', 'Lead routing and tech configured to your structure', 'Recruiting and onboarding support from the brokerage', 'Back office handles splits & disbursements automatically'] as $item)
                         <li class="flex items-start gap-3 text-sm text-white/90">
@@ -67,9 +67,9 @@
                     </div>
                 </div>
                 <p class="mt-5 text-sm leading-relaxed text-slate-600">Switching brokerages shouldn't mean rebuilding your
-                    team. We match your current setup and handle a smooth transition for every agent.</p>
+                    team. We support your current setup providing a smooth transition for every agent.</p>
                 <ul class="mt-6 space-y-3">
-                    @foreach (['Keep your team brand, name, and identity', 'Custom economics matched to how you operate today', 'Smooth license transfer and onboarding for your agents', 'Your agents keep 100% commission at $99 a month', 'No franchise fees, no royalties, no transaction fees'] as $item)
+                    @foreach (['Keep your team brand, name, and identity', 'Custom economics matched to how you operate today', 'Smooth license transfer and onboarding for your agents', 'Customize the commission splits within your team', 'No franchise fees, no royalties, no transaction fees'] as $item)
                         <li class="flex items-start gap-3 text-sm text-slate-700">
                             <span
                                 class="bg-brand-50 text-brand-600 mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full">
