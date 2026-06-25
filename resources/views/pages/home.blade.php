@@ -2,7 +2,7 @@
 
 @section('title', 'Taylor Properties | Keep 100% of Your Commission')
 @section('description',
-    'One of the largest independent brokerages on the east coast. 100% commission, $99 a month, zero agent transaction
+    'One of the largest independent brokerages on the East Coast. 100% commission, $99 a month, zero agent transaction
     fees. Keep more of what you earn.')
 
 @section('content')

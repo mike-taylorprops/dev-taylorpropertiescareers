@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -7,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', 'Taylor Properties | Keep 100% of Your Commission')</title>
-    <meta name="description" content="@yield('description', 'Taylor Properties pays you 100% commission for $99 a month with zero agent transaction fees. One of the largest independent brokerages on the east coast since 1985.')">
+    <meta name="description" content="@yield('description', 'Taylor Properties pays you 100% commission for $99 a month with zero agent transaction fees. One of the largest independent brokerages on the East Coast since 1985.')">
 
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -22,7 +23,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -51,9 +54,12 @@
 
     @stack('head')
 </head>
+
 <body class="nav-offset bg-white text-slate-800 antialiased">
 
-    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-brand-700 focus:text-white focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+    <a href="#main"
+        class="focus:bg-brand-700 sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:px-4 focus:py-2 focus:text-white">Skip
+        to content</a>
 
     <x-nav :transparent="$transparentNav ?? false" />
 
@@ -65,4 +71,5 @@
 
     @stack('scripts')
 </body>
+
 </html>
