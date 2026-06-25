@@ -80,7 +80,7 @@
                     ['1995', 'First 100% Plan', 'We launch one of Maryland\'s first 100%-commission models.'],
                     ['2005', 'Multi-State Expansion', 'Licensing expands to DC and VA - same model, more reach.'],
                     ['2015', 'Tech Stack Built', 'Custom CRM, IDX, and marketing tools - all included for agents.'],
-                    ['2020', '1,000+ Agents', 'Crossed the thousand-agent mark while staying family-owned.'],
+                    ['2020', '1,000+ Agents', 'Crossed the thousand-agent mark while staying family-owned. Expanded to DE and PA.'],
                     ['Today', 'Largest Independent in MD', '1,200+ agents in 5 states. $99/month. Zero agent transaction fees.'],
                 ] as $i => $event)
                     <div x-data x-intersect.once="$el.classList.remove('opacity-0')"
