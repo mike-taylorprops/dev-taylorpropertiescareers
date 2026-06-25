@@ -132,9 +132,9 @@
                 Lean on the brokerage for onboarding and recruiting support, so adding the next agent to your team is fast
                 and painless.
             </x-flip-card>
-            <x-flip-card icon="academic" title="Training Pipeline" stat="monthly" teaser="Live training, masterminds & discounted CD."
+            <x-flip-card icon="academic" title="Training Pipeline" stat="Monthly" teaser="Live training, masterminds & discounted CD."
                 variant="dark">
-                Plug your team into monthly live classes, masterminds, and discounted CE through The CE Shop
+                Plug your team into monthly live classes, masterminds and discounted CE through The CE Shop
             </x-flip-card>
         </div>
     </x-section>
@@ -168,21 +168,15 @@
     {{-- What your agents get --}}
     <x-section tone="soft" eyebrow="Easy to recruit to" title="What every agent on your team gets."
         subtitle="The full Taylor stack comes standard - so recruiting to your team is an easy yes.">
-        <div class="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
-            <x-feature-card icon="shield" title="100% Commission, $99/mo">
-                Every agent keeps 100% of their commission on the $99/month plan - no franchise fees, no transaction fees.
+        <div class="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-2">
+            <x-feature-card icon="shield" title="Custom Team Economics">
+                Customize the commission splits within your team
             </x-feature-card>
             <x-feature-card icon="computer" title="Free Tech Stack">
                 BoldTrail CRM, IDX website, transaction management, and a branded client app - included for every seat.
             </x-feature-card>
-            <x-feature-card icon="academic" title="Mentorship & Training">
-                New agents get 1-on-1 mentorship through their first closings, plus live classes and CE every month.
-            </x-feature-card>
             <x-feature-card icon="megaphone" title="Marketing Support">
                 Real in-house designers and marketers - branded templates, social posts, and listing showcases.
-            </x-feature-card>
-            <x-feature-card icon="lightning" title="Same-Day Pay">
-                When the deal funds, your agents get paid - same day, not a two-week wait.
             </x-feature-card>
             <x-feature-card icon="phone" title="Broker Availability">
                 Brokers who actually pick up - contract questions and offer strategy answered same day, usually under an
