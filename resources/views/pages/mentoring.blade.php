@@ -32,7 +32,7 @@
                 <h3 class="mt-6 font-display text-2xl font-bold">Live Training &amp; Masterminds</h3>
                 <p class="mt-3 text-sm text-white/80">Weekly live classes on the topics that move your business: prospecting, listing presentations, contracts, social media, geo-farming.</p>
                 <ul class="mt-6 space-y-2 text-sm text-white/90">
-                    @foreach (['Weekly live training', 'Topic-specific deep-dives', 'Peer masterminds by region', 'Recorded library on demand'] as $f)
+                    @foreach (['Monthly live training', 'Topic-specific deep-dives', 'Peer masterminds by region', 'Recorded library on demand'] as $f)
                         <li class="flex items-start gap-2"><x-icon name="check" class="h-4 w-4 shrink-0 text-accent-300 mt-1" /><span>{{ $f }}</span></li>
                     @endforeach
                 </ul>

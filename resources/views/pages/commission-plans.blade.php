@@ -208,8 +208,8 @@
             <x-faq question="Is there really no transaction fee?">Yes - we don't charge a per-deal transaction fee. Your $99/month is the entire bill, no matter how many deals you close.</x-faq>
             <x-faq question="Are there any onboarding or join fees?">No. Sign your independent contractor agreement, transfer your license, get to work.</x-faq>
             <x-faq question="Can I be on a team?">Absolutely. We have great teams across MD, DC, VA, DE, and PA. We can also set up custom team economics through the Custom plan.</x-faq>
-            <x-faq question="What if I'm new to real estate?">Perfect. Our mentorship program pairs you with an experienced agent through your first three closings - no extra cost.</x-faq>
-            <x-faq question="What if I just want to refer business?">The Referral Plan is for you. $99/year, 85% on every referred deal, no MLS or association fees.</x-faq>
+            <x-faq question="What if I'm new to real estate?">Perfect. Our mentorship program pairs you with an experienced agent through your first three closings.</x-faq>
+            <x-faq question="What if I just want to refer business?">The Referral Only Plan is for you. $99/year, 85% on every referred deal, no MLS or association fees.</x-faq>
         </div>
     </x-section>
 
