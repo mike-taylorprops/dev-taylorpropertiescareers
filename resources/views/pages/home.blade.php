@@ -90,9 +90,9 @@
 
                             <ul class="mt-6 space-y-3 text-sm text-white/80">
                                 @foreach ([
-                                    'No transaction fee per closing',
+                                    'No agent transaction fee per closing',
                                     'No franchise or royalty fees',
-                                    'No commission split',
+                                    '100# commission split',
                                     'No surprise platform charges',
                                 ] as $item)
                                     <li class="flex items-start gap-2">
@@ -129,7 +129,7 @@
                     <x-stat :number="5" label="States Licensed" tone="light" />
                 </div>
                 <div class="bg-white p-4 sm:p-8">
-                    <x-stat :number="0" prefix="$" label="Agent Transaction Fees" sublabel="Forever" tone="light" />
+                    <x-stat :number="0" prefix="$" label="Agent Transaction Fees"  tone="light" />
                 </div>
             </div>
         </div>
@@ -143,13 +143,13 @@
                          stat="$99"
                          title="Lowest Fixed Cost"
                          teaser="No franchise fees. No royalty fees. No per-transaction agent fees. No desk fees.">
-                $99 a month covers everything. The bill is the bill - same number, every month, forever. Most brokerages charge that much in tech fees alone.
+                $99 a month covers everything. The bill is the bill - same number, every month. Most brokerages charge that much in tech fees alone.
             </x-flip-card>
 
             <x-flip-card variant="gold"
                          icon="shield"
                          stat="100%"
-                         title="Commission, Forever"
+                         title="Commission"
                          teaser="Every dollar you negotiate, you keep - from your first deal to your last.">
                 No splits to chase. No caps to hit. No anniversary resets. Whether it's your first $5k commission or your fiftieth $50k commission, you keep the whole thing.
             </x-flip-card>
