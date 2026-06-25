@@ -97,7 +97,7 @@
                     tone="light" />
                 <x-stat :number="99" prefix="$" label="Per Agent / Month" sublabel="No platform or tech fee"
                     tone="light" />
-                <x-stat :number="0" prefix="$" label="Transaction Fees" sublabel="No per-deal cut"
+                <x-stat :number="0" prefix="$" label="Agent Transaction Fees" sublabel="No per-deal cut"
                     tone="light" />
                 <x-stat :number="5" label="States Covered" sublabel="MD, DC, VA, DE & PA" tone="light" />
             </div>
