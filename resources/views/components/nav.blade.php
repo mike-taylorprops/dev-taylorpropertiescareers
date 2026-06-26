@@ -2,6 +2,7 @@
 
 @php
     $groups = [
+        ['label' => 'Home', 'route' => 'home'],
         ['label' => 'Why Taylor', 'route' => 'why-taylor'],
         [
             'label' => 'Plans',
@@ -30,10 +31,10 @@
     ];
 
     $isActiveGroup = function ($group) {
-        if (isset($group['route']) && request()->routeIs($group['route'])) return true;
+        if (isset($group['route']) && request() -> routeIs($group['route'])) return true;
         if (isset($group['children'])) {
             foreach ($group['children'] as $child) {
-                if (request()->routeIs($child['route'])) return true;
+                if (request() -> routeIs($child['route'])) return true;
             }
         }
         return false;
@@ -48,7 +49,7 @@
     <nav class="page-container flex items-center justify-between gap-6 py-3">
         <a href="{{ route('home') }}"
            class="flex items-center gap-3 transition-opacity duration-300"
-           @if (request()->routeIs('home')) :class="scrolled || open ? 'opacity-100' : 'opacity-0 pointer-events-none'" @endif>
+           @if (request() -> routeIs('home')) :class="scrolled || open ? 'opacity-100' : 'opacity-0 pointer-events-none'" @endif>
             <img src="{{ asset('images/logo-white.png') }}" alt="Taylor Properties" class="h-10 w-auto sm:h-12">
         </a>
 
@@ -90,7 +91,7 @@
                                 <div class="p-2">
                                     @foreach ($group['children'] as $child)
                                         <a href="{{ route($child['route']) }}"
-                                           class="block rounded-xl px-4 py-3 transition hover:bg-brand-50 {{ request()->routeIs($child['route']) ? 'bg-brand-50' : '' }}">
+                                           class="block rounded-xl px-4 py-3 transition hover:bg-brand-50 {{ request() -> routeIs($child['route']) ? 'bg-brand-50' : '' }}">
                                             <div class="font-display text-sm font-semibold text-brand-900">{{ $child['label'] }}</div>
                                             <div class="mt-0.5 text-xs text-slate-500">{{ $child['desc'] }}</div>
                                         </a>

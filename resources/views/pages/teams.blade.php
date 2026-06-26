@@ -123,17 +123,17 @@
                 you're not chasing paperwork or doing math on every deal.
             </x-flip-card>
             <x-flip-card icon="chart" title="Shared Lead Routing" stat="Built-In"
-                teaser="The right lead to the right agent." variant="light">
+                teaser="The right lead to the right agent." variant="dark">
                 Organic and paid leads route straight into the right agent's CRM - never the front desk, never sliced and
                 diced.
             </x-flip-card>
             <x-flip-card icon="users" title="Recruiting Support" stat="We Help" teaser="Grow your roster with us."
-                variant="light">
+                variant="gold">
                 Lean on the brokerage for onboarding and recruiting support, so adding the next agent to your team is fast
                 and painless.
             </x-flip-card>
             <x-flip-card icon="academic" title="Training Pipeline" stat="Monthly" teaser="Live training, masterminds & discounted CD."
-                variant="dark">
+                variant="light">
                 Plug your team into monthly live classes, masterminds and discounted CE through The CE Shop
             </x-flip-card>
         </div>

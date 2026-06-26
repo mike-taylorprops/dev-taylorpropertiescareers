@@ -1,7 +1,7 @@
 @extends('layouts.app', ['transparentNav' => true])
 
 @section('title', 'Mentoring & Training | Taylor Properties')
-@section('description', 'One-on-one mentorship, live training, masterminds, and continuing education through Metropolitan Real Estate Academy and The CE Shop.')
+@section('description', 'One-on-one mentorship, live training, masterminds, and continuing education through The CE Shop.')
 
 @section('content')
 
@@ -30,7 +30,7 @@
                     <x-icon name="academic" class="h-7 w-7" />
                 </div>
                 <h3 class="mt-6 font-display text-2xl font-bold">Live Training &amp; Masterminds</h3>
-                <p class="mt-3 text-sm text-white/80">Weekly live classes on the topics that move your business: prospecting, listing presentations, contracts, social media, geo-farming.</p>
+                <p class="mt-3 text-sm text-white/80">Monthly live classes on the topics that move your business: prospecting, listing presentations, contracts, social media, geo-farming.</p>
                 <ul class="mt-6 space-y-2 text-sm text-white/90">
                     @foreach (['Monthly live training', 'Topic-specific deep-dives', 'Peer masterminds by region', 'Recorded library on demand'] as $f)
                         <li class="flex items-start gap-2"><x-icon name="check" class="h-4 w-4 shrink-0 text-accent-300 mt-1" /><span>{{ $f }}</span></li>
@@ -45,7 +45,7 @@
                 <h3 class="mt-6 font-display text-2xl font-bold text-brand-900">Continuing Education</h3>
                 <p class="mt-3 text-sm text-slate-600">Stay current. Stay sharp. Stay licensed. Through our partner programs, all your CE is in one place.</p>
                 <ul class="mt-6 space-y-2 text-sm text-slate-700">
-                    <li class="flex items-start gap-2"><x-icon name="check" class="h-4 w-4 shrink-0 text-accent-500 mt-1" /><span><a href="https://metropolitanrealestateacademy.com" target="_blank" rel="noopener" class="text-brand-700 underline">Metropolitan Real Estate Academy</a></span></li>
+                   
                     <li class="flex items-start gap-2"><x-icon name="check" class="h-4 w-4 shrink-0 text-accent-500 mt-1" /><span><a href="https://www.theceshop.com" target="_blank" rel="noopener" class="text-brand-700 underline">The CE Shop</a></span></li>
                     <li class="flex items-start gap-2"><x-icon name="check" class="h-4 w-4 shrink-0 text-accent-500 mt-1" /><span>Pre-licensing classes</span></li>
                     <li class="flex items-start gap-2"><x-icon name="check" class="h-4 w-4 shrink-0 text-accent-500 mt-1" /><span>Multi-state CE</span></li>

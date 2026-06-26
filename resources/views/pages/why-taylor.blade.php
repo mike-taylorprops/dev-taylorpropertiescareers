@@ -86,9 +86,9 @@
                                 Contract questions, offer strategy, tricky negotiations - our brokers pick up. Same day,
                                 usually under an hour.
                             </x-flip-card>
-                            <x-flip-card icon="academic" title="Live Training" stat="Weekly"
+                            <x-flip-card icon="academic" title="Live Training" stat="Monthly"
                                 teaser="Classes, masterminds & CE - included." variant="dark">
-                                Monthly live classes, monthly masterminds, and CE through Metropolitan Real Estate Academy
+                                Monthly live classes, monthly masterminds, and discounted CE through The CE Shop
                                 and The CE Shop.
                             </x-flip-card>
                             <x-flip-card icon="briefcase" title="Transaction Coordination" stat="Optional"
