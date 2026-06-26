@@ -15,6 +15,12 @@
              x-data="{ active: null, open(p) { this.active = p; document.body.style.overflow = 'hidden'; }, close() { this.active = null; document.body.style.overflow = ''; } }"
              @keydown.escape.window="close">
         <div class="page-container">
+            
+            <div class="pb-16  w-full">
+            <div class="w-1/2 mx-auto">
+                <img src="{{ asset('images/boldtrail.svg') }}" alt="BoldTrail">
+                </div>
+            </div>
             <div class="grid gap-8 lg:grid-cols-2">
 
                 {{-- Front End --}}
