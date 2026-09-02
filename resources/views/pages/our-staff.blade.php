@@ -16,10 +16,10 @@
             sent: false,
             sending: false,
             error: null,
-            employee: { name: '', first_name: '', email: '' },
+            employee: { id: '', name: '', first_name: '' },
             form: { name: '', email: '', phone: '', message: '' },
-            open(name, first, email) {
-                this.employee = { name: name, first_name: first, email: email };
+            open(id, name, first) {
+                this.employee = { id: id, name: name, first_name: first };
                 this.form = { name: '', email: '', phone: '', message: '' };
                 this.error = null;
                 this.sent = false;
@@ -43,8 +43,7 @@
                         },
                         body: JSON.stringify({
                             ...this.form,
-                            to_name: this.employee.name,
-                            to_email: this.employee.email,
+                            employee_id: this.employee.id,
                         }),
                     });
                     if (!response.ok) throw new Error('Send failed');
@@ -81,7 +80,7 @@
                                 <p class="mt-1 text-sm font-semibold text-accent-500">{{ $employee -> job_title }}</p>
                                 <div class="mt-auto pt-4">
                                     <button
-                                        @click="open('{{ addslashes($name) }}', '{{ addslashes($employee -> first_name ?? '') }}', '{{ addslashes($employee -> email ?? '') }}')"
+                                        @click="open({{ (int) $employee -> id }}, '{{ addslashes($name) }}', '{{ addslashes($employee -> first_name ?? '') }}')"
                                         class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-800">
                                         <x-icon name="mail" class="h-4 w-4" />
                                         Contact {{ $employee -> first_name ?? 'Us' }}
